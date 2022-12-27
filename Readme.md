@@ -38,7 +38,7 @@ If there is nothing happened while double clicking jar, you can run this jar in 
 ### Currently there are 2 issues stopping GFME from loading on Iris, and issue 1 only affect GFME 1.10 and above:
 
 1. Unable to parsing settings (MC_VERSION, etc) in block.properties, causing parsing issues with block.properties. See [Iris#1712](https://github.com/IrisShaders/Iris/issues/1712) for more info.
-2. Attribute indexes are not same as Optifine. For cleaner game output logs, GFME uses below code to get some vertex attributes, but since location index in Iris is different from Optifine, GFME can't get correct vertex attributes while running on Iris.
+2. (Get fixed for 1.17+ in v1.11 Pre2. Sorry for 1.16.5 iris players) ~~Attribute indexes are not same as Optifine. For cleaner game output logs, GFME uses below code to get some vertex attributes, but since location index in Iris is different from Optifine, GFME can't get correct vertex attributes while running on Iris.~~
 ```glsl
 #if MC_VERSION >= 11500
 layout(location = 11) in vec4 mc_Entity;
@@ -50,4 +50,4 @@ layout(location = 11) in vec4 mc_midTexCoord;
 layout(location = 12) in vec4 at_tangent;
 #endif
 ```
-3. (Shouled get fixed in v1.11 Pre1, not checked yet) ~~Custom uniform in Iris works different from Optifine. In Optifine, all custom uniforms are calculated in floating point, so something like integer / integer will returns a correct floating point value but not an integer value. But in iris, integer / integer will returns a floored integer value, this caused the TAA offset could not working in Iris. I have to say this is my fault, and should be fixed in future versions (if there are future versions).~~
+1. (Get fixed in v1.11 Pre1) ~~Custom uniform in Iris works different from Optifine. In Optifine, all custom uniforms are calculated in floating point, so something like integer / integer will returns a correct floating point value but not an integer value. But in iris, integer / integer will returns a floored integer value, this caused the TAA offset could not working in Iris. I have to say this is my fault, and should be fixed in future versions (if there are future versions).~~
