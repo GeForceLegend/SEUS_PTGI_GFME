@@ -1,5 +1,10 @@
 ## HRR 2.1 v1.11
 
+* Lite optimization on GI program, 5% - 10% FPS boost;
+* Fixed compiling error on 1.16.5;
+* Fixed lots of non-full blocks do not get voxelized;
+* Fixed 1.19.3 support
+
 ### Preview2
 
 * Fixed something unknown (but related to fishing rod line) calculated in voxelization;

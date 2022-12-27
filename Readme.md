@@ -33,11 +33,11 @@ If there is nothing happened while double clicking jar, you can run this jar in 
 
 ### Many more small fixes and improvements for vanilla PTGI...
 
-## Currently Not compatible with [Iris](https://github.com/IrisShaders/Iris)
+## Compatible with latest beta (1.5.0 Beta2) of [Iris](https://github.com/IrisShaders/Iris)
 
-### Currently there are 2 issues stopping GFME from loading on Iris, and issue 1 only affect GFME 1.10 and above:
+### Currently there are 2 issues stopping GFME from loading on previous Iris, and issue 1 only affect GFME 1.10 and above:
 
-1. Unable to parsing settings (MC_VERSION, etc) in block.properties, causing parsing issues with block.properties. See [Iris#1712](https://github.com/IrisShaders/Iris/issues/1712) for more info.
+1. (Get fixed by iris side on iris 1.5.0 beta2)~~Unable to parsing settings (MC_VERSION, etc) in block.properties, causing parsing issues with block.properties. See [Iris#1712](https://github.com/IrisShaders/Iris/issues/1712) for more info.~~
 2. (Get fixed for 1.17+ in v1.11 Pre2. Sorry for 1.16.5 iris players) ~~Attribute indexes are not same as Optifine. For cleaner game output logs, GFME uses below code to get some vertex attributes, but since location index in Iris is different from Optifine, GFME can't get correct vertex attributes while running on Iris.~~
 ```glsl
 #if MC_VERSION >= 11500
