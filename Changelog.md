@@ -1,3 +1,10 @@
+## HRR 2.1 v1.11.1
+
+* Fixed compiling error with screen space gi on;
+* Fixed ray traced contact shadow issue with parallax;
+* Fixed multiple stained glass blocks in one ray;
+* Fixed furnace light does not get stained.
+
 ## HRR 2.1 v1.11
 
 * Lite optimization on GI program, 5% - 10% FPS boost;
