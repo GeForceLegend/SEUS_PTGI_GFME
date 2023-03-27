@@ -1,3 +1,11 @@
+## HRR 2.1 v1.12
+
+* Added support for 1.19.4 new blocks
+* Added support for bamboo buttons. They are forgotten in my 1.19.3 support.
+* Added new setting SHAPE_CALC_FUNC, this can make you choose higher framerate or faster compiling while changing shader options.
+* Fixed sky light leaking fix does not affect cloud light in irradiance cache ([#10](https://github.com/GeForceLegend/SEUS_PTGI_GFME/issues/10))
+* Fixed sky rendering after joining a new world or turn back from the end.
+
 ## HRR 2.1 v1.11.1
 
 * Fixed compiling error with screen space gi on;
