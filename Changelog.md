@@ -1,3 +1,10 @@
+## HRR 2.1 v1.12.1
+
+* Fixed invisible experience orb;
+* Fixed depth factor in reflection filter;
+* Fixed reflection outside of voxelization radius;
+* Fixed hand held light value with only off hand helds light;
+
 ## HRR 2.1 v1.12
 
 * Added support for 1.19.4 new blocks
