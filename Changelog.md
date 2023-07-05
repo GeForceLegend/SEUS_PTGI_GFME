@@ -1,3 +1,11 @@
+## HRR 2.1 v1.13
+
+* Added 1.20 support (suspicious_gravel and calibrated_sculk_sensor);
+* Merged some missing changes from HRR3;
+* Reduced default parallax depth;
+* Fixed some entities like shulker box will write to voxel map at noon or midnight;
+* Fixed sky brightness is 2x as expected;
+
 ## HRR 2.1 v1.12.1
 
 * Fixed invisible experience orb;
