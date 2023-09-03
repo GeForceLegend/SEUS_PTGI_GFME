@@ -1,3 +1,9 @@
+## HRR 2.1 v1.13.1
+
+* Fixed compiling error with pixel look set to 1;
+* Fixed compatibility with normal/specular switch on shader list menu;
+* Fixed off-hand light in nether and the end;
+
 ## HRR 2.1 v1.13
 
 * Added 1.20 support (suspicious_gravel and calibrated_sculk_sensor);
