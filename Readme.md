@@ -3,6 +3,12 @@
 
 A deeply modified version of SEUS PTGI
 
+## Language Files
+
+If you want to add language file for your own language, create a pull request!
+
+Please make sure the name of your language file is lower-case like `en_us.lang` but not `en_US.lang`, or low versions of Minecraft and Optifine won't read them.
+
 ## Install
 
 ### Due to PTGI's EULA, its illegal to distribute PTGI's code directly, so you need to follow these steps to extract SEUS PTGI GFME

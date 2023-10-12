@@ -1,0 +1,235 @@
+# Modified by GeForceLegend, part of text correction by Yark. No permission for any payment
+option.Version=版本
+value.Version.HRR210_GFME1_13=HRR 2.1 GFME 1.13.1
+option.Version.comment=基于SEUS PTGI HRR Test 2.1的修改版本. 由GeForceLegend修改，当前修改版本1.13.1
+
+screen.Atmosphere=大气...
+screen.Atmosphere.comment=云层和体积光等大气效果
+screen.Shadow=阴影...
+screen.Shadow.comment=阴影的精细度，渲染距离与一些辅助阴影等
+screen.Lighting=光照...
+screen.Lighting.comment=阳光的强度与颜色，以及方块的发光强度等
+screen.Texture=纹理...
+screen.Texture.comment=纹理的分辨率，PBR纹理与视差等
+screen.Parallax=视差...
+screen.Parallax.comment=视差的开关，视差深度与平滑视差等
+screen.Specular=PBR纹理...
+screen.Specular.comment=PBR纹理的相关设置
+screen.RayTracing=光线追踪...
+screen.RayTracing.comment=光线追踪中的一切
+screen.Reflection=反射...
+screen.Reflection.comment=反射的距离与一些辅助反射等
+screen.Water=水...
+screen.Water.comment=水波与水雾等水体效果
+screen.Postprocessing=后处理...
+screen.Postprocessing.comment=画面色彩和风格选项
+screen.AntiAliasing=抗锯齿...
+screen.Others=其他...
+screen.Others.comment=一些杂项设置
+
+# 大气选项
+option.CLOUDS_IN_GI=天空光照云色计算（光线追踪范围内）
+option.CLOUDS_IN_GI.comment=在光线追踪中计算云的颜色. 关闭后会使光线追踪中的天空光照变蓝
+option.CLOUDS_IN_AMBIENT=天空光照云色计算（光线追踪范围外）
+option.CLOUDS_IN_AMBIENT.comment=在光线追踪范围外的天空光照中计算云的颜色. 关闭后会使光线追踪范围外的天空光照变蓝
+option.CIRRUS_CLOUDS=卷云
+option.CIRRUS_CLOUDS.comment=高空中较为稀薄的云
+option.CUMULUS_CLOUDS=积云
+option.CUMULUS_CLOUDS.comment=较低并且厚实的云
+option.CLOUDS_BLOCKY=方块云
+option.CLOUDS_BLOCKY.comment=让云层的分布看起来更有方块感
+option.GODRAYS=体积光
+option.GODRAYS.comment=阳光在大气中产生的立体光束. 不会影响水下的体积光
+option.GODRAYS_STAINED_GLASS_TINT=染色体积光
+option.GODRAYS_STAINED_GLASS_TINT.comment=体积光穿过半透明方块时改变颜色
+option.VOLUMETRIC_LIGHT_STRENGTH=体积光强度
+option.VOLUMETRIC_LIGHT_STRENGTH.comment=体积光的密度和亮度. 同时影响水下体积光
+
+# 阴影选项
+option.shadowDistance=阴影范围
+option.shadowDistance.comment=最远可见阴影的范围. 调高以获得更好的远处阴影. 调低以获得更好的近处阴影
+option.shadowMapResolution=阴影精度/光追范围
+option.shadowMapResolution.comment=阴影的精细度. 同时决定光线追踪的渲染范围. 16k/18区块需要至少6GB显存. 32k/32区块需要至少20GB显存!
+value.shadowMapResolution.4096=4k/5区块
+value.shadowMapResolution.8192=8k/10区块
+value.shadowMapResolution.16384=16k/18区块
+value.shadowMapResolution.32768=32k/32区块
+option.SHADOW_MAP_BIAS=近处阴影精度
+option.SHADOW_MAP_BIAS.comment=通过阴影贴图的形变来提高近处阴影精细度. 更高的值会让近处阴影更加精细，但是会降低远处阴影的精细度
+option.sunPathRotation=太阳轨道角度
+option.sunPathRotation.comment=太阳轨道的偏转角度
+option.RAY_TRACE_SHADOW=光线追踪阴影
+option.RAY_TRACE_SHADOW.comment=使用光线追踪的衔接阴影，衔接准确性极佳但是不支持部分方块. 建议在屏幕空间阴影开启时关闭以减少性能消耗
+option.SCREEN_SPACE_SHADOW=屏幕空间阴影
+option.SCREEN_SPACE_SHADOW.comment=PTGI默认的衔接阴影，准确性不佳但支持所有不透明方块. 建议在开启时关闭光线追踪阴影以减少性能消耗
+option.CLOUD_SHADOW=云影
+option.CLOUD_SHADOW.comment=云遮挡阳光产生的阴影. 同时影响体积光中是否计算云
+
+# 光照选项
+option.SUNLIGHT_BRIGHTNESS=日光亮度
+option.SUNLIGHT_BRIGHTNESS.comment=太阳光的亮度
+option.TORCHLIGHT_COLOR_TEMPERATURE=光源色温
+option.TORCHLIGHT_COLOR_TEMPERATURE.comment=控制普通火把、灯笼等光源以及手持光源的颜色. 较高的值为冷色.
+option.GI_LIGHT_BLOCK_INTENSITY=方块光源亮度
+option.GI_LIGHT_BLOCK_INTENSITY.comment=完整照明方块（萤石，海晶灯等）的亮度. 在反射里正常渲染的光源
+option.GI_LIGHT_TORCH_INTENSITY=火把光源亮度
+option.GI_LIGHT_TORCH_INTENSITY.comment=点光照明方块（火把，灯笼等）的亮度. 在反射里被渲染为一个光球的光源
+option.HELD_LIGHT=手持光源
+option.HELD_LIGHT.comment=照亮玩家周围的环境. 光源颜色受仅受色温控制
+option.GI_SUNLIGHT_STAINED_GLASS_TINT=光线追踪染色阳光
+option.GI_SUNLIGHT_STAINED_GLASS_TINT.comment=在光线追踪中计算阳光时允许染色玻璃进行染色
+option.GLOWING_REDSTONE_BLOCK=红石块发光
+option.GLOWING_EMERALD_BLOCK=绿宝石块发光
+option.GLOWING_LAPIS_LAZULI_BLOCK=青金石块发光
+
+# 纹理选项
+option.TEXTURE_RESOLUTION=纹理分辨率
+option.TEXTURE_RESOLUTION.comment=将此选项调整为当前资源包的分辨率. 影响视差、光线追踪和反射的渲染
+value.TEXTURE_RESOLUTION.0=自动检测
+option.NORMAL_MAP_STRENGTH=法线强度
+option.NORMAL_MAP_STRENGTH.comment=法线贴图的强度. 更高的值会使凹凸感更强
+option.ANISOTROPIC_LOD_BIAS=各向异性层次细节
+option.ANISOTROPIC_LOD_BIAS.comment=开启后会让低可视角度的纹理拥有更多细节. 类似纹理层次细节.
+option.TEXTURE_LOD_BIAS=纹理层次细节
+option.TEXTURE_LOD_BIAS.comment=更高的值使纹理拥有更多的细节，但是会导致图像抖动、产生拖影并影响性能. 更低的值使图像更稳定并提升性能，但是会导致远处及低可视角度的纹理细节下降. 
+option.WET_CAVE_EFFECT=潮湿洞穴效果
+option.WET_CAVE_EFFECT.comment=实验性! 没有被天空或者方块照亮的表面会变得潮湿
+option.FORCE_WET_EFFECT=雨天积水
+option.FORCE_WET_EFFECT.comment=下雨时露天的表面会变得潮湿. 关闭此选项后，PTGI会使用视差的数据来计算法线
+option.RAIN_SPLASH_EFFECT=雨滴涟漪
+option.RAIN_SPLASH_EFFECT.comment=下雨时露天的表面会有雨滴滴落形成的环形波纹
+option.RAIN_SPLASH_BILATERAL=平滑雨滴涟漪
+option.RAIN_SPLASH_BILATERAL.comment=使雨滴涟漪变得更加平滑
+# 视差选项
+option.PARALLAX=视差
+option.PARALLAX.comment=模拟从不同角度观察不平整的表面造成的细节差异. 如果关闭了雨天积水效果，推荐在所用纹理没有视差时关闭
+option.SMOOTH_PARALLAX=平滑视差
+option.SMOOTH_PARALLAX.comment=平滑高度差的过渡. 建议在使用高清纹理时启用，使用像素风纹理时禁用
+option.PARALLAX_DEPTH=视差深度
+option.PARALLAX_DEPTH.comment=视差的深度. 高的值会让视差效果更明显
+option.PARALLAX_DISTANCE=视差距离
+option.PARALLAX_DISTANCE.comment=视差渲染的距离
+# PBR纹理选项
+option.SPEC_EMISSIVE=自发光纹理
+option.SPEC_EMISSIVE.comment=使用当前资源包的物理贴图PBR贴图中的发光信息，而不是光影中硬编码的方块
+option.SPEC_SMOOTHNESS_AS_ROUGHNESS=光滑度转为粗糙度
+option.SPEC_SMOOTHNESS_AS_ROUGHNESS.comment=将纹理的光滑度反相为粗糙度
+option.PHYSICALLY_BASED_MAX_ROUGHNESS=基于物理的最大粗糙度
+option.PHYSICALLY_BASED_MAX_ROUGHNESS.comment=开启后，即使是100%粗糙的面也会微弱的反射光
+option.FULL_RT_REFLECTIONS=完整反射
+option.FULL_RT_REFLECTIONS.comment=让所有粗糙度的表面均能进行反射. 禁用后仅较为光滑的面能进行反射
+option.SPEC_CHANNEL_SMOOTHNESS=光滑度通道
+option.SPEC_CHANNEL_SMOOTHNESS.comment=决定纹理光滑度的通道
+value.SPEC_CHANNEL_SMOOTHNESS.0=r
+value.SPEC_CHANNEL_SMOOTHNESS.1=g
+value.SPEC_CHANNEL_SMOOTHNESS.2=b
+value.SPEC_CHANNEL_SMOOTHNESS.3=a
+option.SPEC_CHANNEL_METALNESS=金属性通道
+option.SPEC_CHANNEL_METALNESS.comment=决定纹理金属性的通道
+value.SPEC_CHANNEL_METALNESS.0=r
+value.SPEC_CHANNEL_METALNESS.1=g
+value.SPEC_CHANNEL_METALNESS.2=b
+value.SPEC_CHANNEL_METALNESS.3=a
+option.SPEC_CHANNEL_EMISSIVE=自发光通道
+option.SPEC_CHANNEL_EMISSIVE.comment=决定纹理自发光亮度的通道
+value.SPEC_CHANNEL_EMISSIVE.0=r
+value.SPEC_CHANNEL_EMISSIVE.1=g
+value.SPEC_CHANNEL_EMISSIVE.2=b
+value.SPEC_CHANNEL_EMISSIVE.3=a
+
+# 光线追踪选项
+option.GI_RAY_COUNT=光线追踪采样数
+option.GI_RAY_COUNT.comment=每帧的光线追踪采样数. 高的值可以有效缓解噪点. 极其影响性能!
+option.GI_SECONDARY_SAMPLES=辅助光追采样数
+option.GI_SECONDARY_SAMPLES.comment=每帧运算的辅助光追采样数量. 高的值可以缓解地面间歇性闪光的问题
+option.DIFFUSE_TRACE_LENGTH=光线追踪距离
+option.DIFFUSE_TRACE_LENGTH.comment=光线追踪单根光线的最远追踪距离. 追踪距离内没有检测到方块则视为接受天空光照.
+option.RAYTRACE_GEOMETRY_QUALITY=光线追踪几何体渲染质量
+option.RAYTRACE_GEOMETRY_QUALITY.comment=光线追踪中几何体的渲染质量. 低质量时所有方块的遮光体积均为完整方块. 中质量时部分方块以编码好的遮光体积参与光线追踪. 高质量时所有已编码遮光体积的方块均以编码好的遮光体积参与光线追踪. 高质量会严重延长设置更改后的编译等待时间
+value.RAYTRACE_GEOMETRY_QUALITY.0=低
+value.RAYTRACE_GEOMETRY_QUALITY.1=中
+value.RAYTRACE_GEOMETRY_QUALITY.2=高
+option.MAX_BLEND_WEIGHT=最大帧混合比例
+option.MAX_BLEND_WEIGHT.comment=进行帧累积降噪时过往帧的最大混合比例. 低的值会让环境光因随机采样产生的变化更明显. 高的值会让拖影更明显
+option.GI_SCREEN_SPACE_TRACING=屏幕空间光线追踪
+option.GI_SCREEN_SPACE_TRACING.comment=利用屏幕空间信息进行的短距离光线追踪. 能处理草与实体等无法在世界空间光线追踪内处理的物体. 会导致一些阴影的错位
+option.SUNLIGHT_LEAK_FIX=阳光泄漏修复
+option.SUNLIGHT_LEAK_FIX.comment=修复洞穴和室内阳光泄露的现象. 大型悬空建筑下方会出现原版光照造成的伪影
+option.MOD_BLOCK_SUPPORT=模组方块支持
+option.MOD_BLOCK_SUPPORT.comment=将模组中的部分方块写入体素. 有时会与Optifine的连接纹理产生冲突. 关闭后模组方块不会影响环境光照与反射
+option.CAVE_GI_LEAK_FIX=洞穴内天空光照泄漏修复
+option.CAVE_GI_LEAK_FIX.comment=修复洞穴和室内天空光照泄露的现象. 大型悬空建筑下方会出现原版光照造成的伪影
+option.SHAPE_CALC_FUNC=几何形状渲染函数
+option.SHAPE_CALC_FUNC.comment=改变在路径追踪中渲染已编码几何体的函数，以在更短的编译时间和更高的帧率中选择
+value.SHAPE_CALC_FUNC.0=编译时间
+value.SHAPE_CALC_FUNC.1=性能
+
+# 反射选项
+option.REFLECTION_TRACE_LENGTH=反射距离
+option.REFLECTION_TRACE_LENGTH.comment=决定每个反射面（镜面，水面）能反射的最远物体的距离. 从反射面出发的距离，高的值可以反射更远的物体. 追踪距离内没有检测到方块则反射天空
+option.SCREEN_SPACE_CONNECTION_REFLECTION=屏幕空间衔接反射
+option.SCREEN_SPACE_CONNECTION_REFLECTION.comment=在光线追踪反射的基础上获取屏幕空间的信息进行覆盖. 可以处理多纹理方块在反射中纹理不对的情况. 对未编码遮光体积的方块处理会较为异常
+option.REFLECTION_SCREEN_SPACE_TRACING=屏幕空间反射
+option.REFLECTION_SCREEN_SPACE_TRACING.comment=屏幕内的所有物体都能进行反射. 提供不能在光线追踪中渲染的物体（生物，草等）的反射镜像
+
+# 水体选项
+option.WATER_PARALLAX=水面视差
+option.WATER_PARALLAX.comment=在水面的波浪中模拟视差
+option.WATER_WAVE_HEIGHT=水波高度
+option.WATER_WAVE_HEIGHT.comment=水体表面波浪的高低差
+option.WATER_FOG_DENSITY=水雾密度
+option.WATER_FOG_DENSITY.comment=水雾的密度，高的值会让水雾更浓
+option.UNDERWATER_REFLECTION_STRENGTH=全反射边缘过渡强度
+option.UNDERWATER_REFLECTION_STRENGTH.comment=水下折射和全反射的过渡效果强度
+
+# 后期处理
+option.TONEMAP_CURVE=色彩映射强度
+option.TONEMAP_CURVE.comment=色彩映射曲线的强度. 高的值会让不同映射曲线的风格化更明显. 同时影响亮度和鲜艳度
+option.TONEMAP_OPERATOR=映射曲线类型
+option.TONEMAP_OPERATOR.comment=色彩映射曲线的算法
+option.EXPOSURE=曝光
+option.EXPOSURE.comment=画面可感光线强度，控制全局亮度. 高的值会让画面更明亮
+option.SATURATION=饱和度
+option.SATURATION.comment=画面颜色鲜艳程度. 高的值会让画面色彩更鲜艳
+option.GAMMA=伽马亮度
+option.GAMMA.comment=阴影和深色区域的最低亮度. 高的值会限制最低亮度. 过高的值会让画面发灰
+option.BLOOM_AMOUNT=泛光强度
+option.BLOOM_AMOUNT.comment=在明亮的区域产生模糊的炫光效果. 高的值泛光更明显. 过高的值可能会发生色彩溢出而导致反色
+value.BLOOM_AMOUNT.0.0=禁用
+option.BLACK_DEPTH=暗部增益
+option.BLACK_DEPTH.comment=将黑暗的区域直接视为纯黑. 高的值会让增益区域变大
+value.BLACK_DEPTH.0.0=禁用
+option.WHITE_CLIP=高光增益
+option.WHITE_CLIP.comment=将高亮的区域直接视为纯白. 高的值会让增益区域变大
+value.WHITE_CLIP.0.0=禁用
+option.MOTION_BLUR=动态模糊
+option.MOTION_BLUR.comment=模拟运动时摄像机出现的画面模糊效果. 增强画面动感
+option.MOTION_BLUR_INTENSITY=动态模糊强度
+option.MOTION_BLUR_INTENSITY.comment=产生的模糊效果的强度. 高的值会让运动时的画面更模糊
+option.POST_SHARPENING=锐化
+option.POST_SHARPENING.comment=将画面像素进行锐利化处理. 强的值会让画面更清晰. 激进模式会使画面有雕刻感
+option.DEPTH_OF_FIELD=景深
+option.DEPTH_OF_FIELD.comment=模糊非镜头聚焦的物体
+option.DOF_STRENGTH=景深强度
+option.DOF_STRENGTH.comment=景深的模糊强度
+#抗锯齿处理
+option.FINAL_FXAA=后期抗锯齿处理数
+option.FINAL_FXAA.comment=在输出画面之前再次进行抗锯齿处理. 高的值会让画面更加平滑但可能略显模糊
+option.PIXEL_LOOK=像素风格
+option.PIXEL_LOOK.comment=最终画面的观感. 锐利模式会让画面更清晰. 电影模式会让画面较为柔和
+value.PIXEL_LOOK.0=锐利
+value.PIXEL_LOOK.1=电影
+option.SKIP_AA=§c*§r 跳过抗锯齿
+option.SKIP_AA.comment=仅为示范性功能! 跳过所有抗锯齿处理直接输出最终图像!
+option.AA_STYLE=响应方式
+option.AA_STYLE.comment=抗锯齿的响应方式. 平缓模式会在任何时候都会优先累积帧来获得更稳定的图像. 灵敏模式会在运动时丢弃积累帧获得更清晰的图像
+value.AA_STYLE.0=平缓
+value.AA_STYLE.1=灵敏
+
+# 其它
+option.VISUALIZE_DANGEROUS_LIGHT_LEVEL=危险亮度可视化
+option.VISUALIZE_DANGEROUS_LIGHT_LEVEL.comment=让亮度低至可能生成怪物的区域以红色高亮显示
+option.SKYLIGHT_FIX=天空光照修复
+option.SKYLIGHT_FIX.comment=实验性选项. 尝试修复1.13之后方块光源周围的原版天空光照等级异常的问题
+option.WEATHER=天气
+option.WEATHER.comment=渲染雨和雪等天气效果. 只是勉强能用的水平并且bug比较多
