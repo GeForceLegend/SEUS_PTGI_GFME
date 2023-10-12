@@ -1,7 +1,7 @@
 # Modified by GeForceLegend, part of text correction by Yark. No permission for any payment
 option.Version=版本
-value.Version.HRR210_GFME1_13=HRR 2.1 GFME 1.13.1
-option.Version.comment=基于SEUS PTGI HRR Test 2.1的修改版本. 由GeForceLegend修改，当前修改版本1.13.1
+value.Version.HRR210_GFME=HRR 2.1 GFME
+option.Version.comment=基于SEUS PTGI HRR Test 2.1的修改版本. 由GeForceLegend修改
 
 screen.Atmosphere=大气...
 screen.Atmosphere.comment=云层和体积光等大气效果
