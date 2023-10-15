@@ -1,7 +1,7 @@
 # Modified by GeForceLegend, part of text correction by Yark. No permission for any payment
 option.Version=버전
-value.Version.HRR210_GFME1_13=HRR 2.1 GFME 1.13
-option.Version.comment=PTGI HRR 테스트 2.1의 크게 수정된 버전. GeForceLegend 제작 수정된 버전 1.13.
+value.Version.HRR210_GFME=HRR 2.1 GFME
+option.Version.comment=PTGI HRR 테스트 2.1의 크게 수정된 버전. GeForceLegend 제작.
 
 screen.Atmosphere=대기 효과...
 screen.Atmosphere.comment=갓레이, 구름 및 대기
