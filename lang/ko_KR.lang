@@ -1,0 +1,241 @@
+# Modified by GeForceLegend, part of text correction by Yark. No permission for any payment
+option.Version=버전
+value.Version.HRR210_GFME1_13=HRR 2.1 GFME 1.13
+option.Version.comment=PTGI HRR 테스트 2.1의 크게 수정된 버전. GeForceLegend 제작 수정된 버전 1.13.
+
+screen.Atmosphere=대기 효과...
+screen.Atmosphere.comment=갓레이, 구름 및 대기
+screen.Shadow=그림자...
+screen.Shadow.comment=그림자 해상도, 거리 및 기타
+screen.Lighting=조명...
+screen.Lighting.comment=조명 색상과 세기
+screen.Texture=텍스처...
+screen.Texture.comment=표면과 텍스처 렌더링에 관한 모든 것
+screen.Parallax=패럴랙스...
+screen.Parallax.comment=패럴랙스 옵션
+screen.Specular=스페큘러
+screen.Specular.comment=스페큘러 텍스처 설정
+screen.RayTracing=레이트레이싱...
+screen.RayTracing.comment=레이트레이싱!
+screen.Reflection=반사...
+screen.Reflection.comment=반사 길이와 일부 화면 공간 반사
+screen.Water=물...
+screen.Water.comment=물 파동, 안개 및 기타
+screen.Postprocessing=후처리 설정
+screen.Postprocessing.comment=색상 그레이딩, 모션 블러, 최종 프레젠테이션 관련 설정
+screen.AntiAliasing=안티 앨리어싱...
+screen.Others=기타
+screen.Others.comment=일부 추가 설정
+
+# 대기
+option.CLOUDS_IN_GI=GI에서 구름
+option.CLOUDS_IN_GI.comment=GI 빛 추적에서 구름을 고려할지 여부. 성능의 대가로 구름이 주변 조명 색상에 영향을 미치도록 허용합니다.
+option.CLOUDS_IN_AMBIENT=환경 조명에서 구름
+option.CLOUDS_IN_AMBIENT.comment=멀리 떨어진 거리의 환경 조명에서 구름을 고려할지 여부. 성능의 대가로 레이트레이싱의 가장자리에서 더 나은 연결을 얻을 수 있습니다.
+option.CIRRUS_CLOUDS=권운
+option.CIRRUS_CLOUDS.comment=권운을 그릴지 여부입니다. 적운보다는 성능에 덜 영향을 미칩니다. 그러나 GI에서 구름이나 반사에서 구름을 사용하는 경우 성능에 영향을 미칩니다.
+option.CUMULUS_CLOUDS=적운
+option.CUMULUS_CLOUDS.comment=적운을 그릴지 여부. 성능에 영향을 미칩니다, 특히 GI에서 구름이나 반사에서 구름을 사용하는 경우 더욱 그렇습니다.
+option.CLOUDS_BLOCKY=사각형 구름
+option.CLOUDS_BLOCKY.comment= 마인크래프트같은 느낌을 내기 위해, 쿠뮬러스 구름을 블록 모양으로 그릴지 여부를 결정합니다.
+option.GODRAYS=대기 갓레이
+option.GODRAYS.comment=해당 설정은 물 아래가 아닐 때 태양광의 볼륨 라이팅(갓레이)을 활성화합니다.
+option.GODRAYS_STAINED_GLASS_TINT=갓레이 유리 색 적용
+option.GODRAYS_STAINED_GLASS_TINT.comment=갓레이 색상에 색 적용 효과를 활성화합니다.
+option.VOLUMETRIC_LIGHT_STRENGTH=갓레이 강도
+option.VOLUMETRIC_LIGHT_STRENGTH.comment=갓레이의 강도를 조절합니다. 수중 갓레이에도 영향을 미칩니다.
+
+# 그림자
+option.shadowDistance=그림자 거리
+option.shadowDistance.comment=그림자 거리. 더 멋진 가까운 그림자를 선호한다면 더 낮게 설정하십시오. 더 멋진 먼 그림자를 선호한다면 더 높게 설정하십시오.
+option.shadowMapResolution=그림자 맵 해상도
+option.shadowMapResolution.comment=높은 값은 성능에 영향을 미치지만 더 나은 그림자를 얻을 수 있으며 광선 추적 거리를 늘릴 수 있습니다. 16k/18 청크에는 최소 6GB VRAM이 필요합니다. 32k/32 청크에는 최소 20GB VRAM이 필요합니다.
+value.shadowMapResolution.4096=4k / 5 청크
+value.shadowMapResolution.8192=8k / 10 청크
+value.shadowMapResolution.16384=16k / 18 청크
+value.shadowMapResolution.32768=32k / 32 청크
+option.SHADOW_MAP_BIAS=그림자 맵 바이어스
+option.SHADOW_MAP_BIAS.comment=값이 높을수록 가까운 그림자는 더 좋아질 수 있지만 먼 그림자는 더 나빠질 수 있습니다.
+option.sunPathRotation=태양 경로 각도
+option.RAY_TRACE_SHADOW=레이트레이싱 그림자
+option.RAY_TRACE_SHADOW.comment=레이트레이싱 그림자, 정확한 연결 그림자를 얻을 수 있지만 일부 블록을 지원하지 않습니다.
+option.SCREEN_SPACE_SHADOW=스크린 스페이스 그림자
+option.SCREEN_SPACE_SHADOW.comment=PTGI의 기본 연결 그림자, 레이트레이싱 그림자만큼 정확하지는 않지만 모든 블록과 엔티티를 지원합니다.
+option.CLOUD_SHADOW=구름 그림자
+option.CLOUD_SHADOW.comment=구름 그림자. 갓레이에 영향을 미칩니다.
+
+
+# Lighting
+option.SUNLIGHT_BRIGHTNESS=태양 빛 세기
+option.SUNLIGHT_BRIGHTNESS.comment=태양 빛 대비로 하늘/주변 빛의 상대적 밝기를 조절합니다.
+option.TORCHLIGHT_COLOR_TEMPERATURE=횃불 빛 색온도
+option.TORCHLIGHT_COLOR_TEMPERATURE.comment=켈빈 단위의 횃불 빛의 색온도입니다.
+option.GI_LIGHT_BLOCK_INTENSITY=블록 빛 밝기
+option.GI_LIGHT_BLOCK_INTENSITY.comment=단단한 블록에서 나오는 빛의 밝기입니다.
+option.GI_LIGHT_TORCH_INTENSITY=횃불 빛 밝기
+option.GI_LIGHT_TORCH_INTENSITY.comment=횃불에서 나오는 빛의 밝기입니다.
+option.HELD_LIGHT=동적 손에 든 빛
+option.HELD_LIGHT.comment=손에 든 아이템이 장면으로 빛을 방출하도록 합니다. 현재로서는 방출되는 빛은 항상 횃불 색상입니다!
+option.GI_SUNLIGHT_STAINED_GLASS_TINT=광선 추적에서 물감이 칠해진 태양 빛
+option.GI_SUNLIGHT_STAINED_GLASS_TINT.comment=광선 추적에서 태양 빛에 Tint 효과를 적용합니다.
+option.GLOWING_LAPIS_LAZULI_BLOCK=빛나는 청금석 블록
+option.GLOWING_REDSTONE_BLOCK=빛나는 레드스톤 블록
+option.GLOWING_EMERALD_BLOCK=빛나는 에메랄드 블록
+
+
+# Textures
+option.TEXTURE_RESOLUTION=텍스처 해상도
+option.TEXTURE_RESOLUTION.comment=현재 리소스 팩의 해상도. 반사 효과를 올바르게 설정해야 합니다! 올바른 반사를 위해 일관된 해상도의 리소스 팩을 사용하십시오!
+value.TEXTURE_RESOLUTION.0=자동
+option.NORMAL_MAP_STRENGTH=노말 맵 강도
+option.NORMAL_MAP_STRENGTH.comment=노말 맵의 강도입니다.
+option.ANISOTROPIC_LOD_BIAS=아니소트로픽 LOD 바이어스
+option.ANISOTROPIC_LOD_BIAS.comment=활성화되면, 더 높은 경사각에서 표면의 세부 정보를 보존합니다. 텍스처 LOD 바이어스와 유사한 트레이드오프가 존재합니다.
+option.TEXTURE_LOD_BIAS=텍스처 LOD 바이어스
+option.TEXTURE_LOD_BIAS.comment=높은 값은 텍스처의 세부 정보를 보존하지만 불안정성, 고스트 현상 및 성능 저하를 초래할 수 있습니다. 낮은 값은 이미지의 안정성과 성능을 향상시키지만 원거리 및 경사각에서 낮은 해상도의 텍스처를 유발할 수 있습니다.
+option.FORCE_WET_EFFECT=젖음 효과 강제
+option.FORCE_WET_EFFECT.comment=비가 오는 경우 모든 표면을 젖게 만들어 반사 효과를 얻도록 합니다.
+option.WET_CAVE_EFFECT=젖은 동굴 효과
+option.WET_CAVE_EFFECT.comment=실험 기능! 하늘 빛이나 블록 빛으로 밝혀지지 않는 표면을 젖게 만들어 동굴을 젖게 만들지만, 동굴이 아닌 지역도 젖게 만듭니다.
+option.RAIN_SPLASH_EFFECT=비 스플래시
+option.RAIN_SPLASH_EFFECT.comment=물과 젖은 블록에서의 비의 물결/스플래시 효과입니다.
+option.RAIN_SPLASH_BILATERAL=부드러운 비 스플래시
+option.RAIN_SPLASH_BILATERAL.comment=비의 물결 텍스처를 부드럽게 만드는 (강한 화소 가장자리 없음) 양방향 필터입니다. 활성화되면 성능의 대가로 물결 텍스처가 부드럽게 됩니다.
+
+# Parallax
+option.PARALLAX=패럴랙스 (POM)
+option.PARALLAX.comment=Height 맵을 사용하는 리소스 팩에 대한 3D 효과. 텍스처 해상도가 올바르게 설정되어 있는지 확인하세요!
+option.SMOOTH_PARALLAX=부드러운 패럴랙스 표면
+option.SMOOTH_PARALLAX.comment=POM 결과를 부드럽게 만들어 결과 표면이 강한 화소 가장자리 대신 부드러운 경사를 가지도록 합니다.
+option.PARALLAX_DEPTH=패럴랙스 깊이
+option.PARALLAX_DEPTH.comment=패럴랙스 효과의 깊이입니다.
+option.PARALLAX_DISTANCE=패럴랙스 거리
+option.PARALLAX_DISTANCE.comment=패럴랙스 렌더링 거리입니다.
+# PBR
+option.SPEC_EMISSIVE=스펙큘러 텍스쳐 발광
+option.SPEC_EMISSIVE.comment=스펙큘러 텍스처로부터 발광 데이터를 활성화합니다.
+option.SPEC_SMOOTHNESS_AS_ROUGHNESS=Smooth를 Rough으로
+option.SPEC_SMOOTHNESS_AS_ROUGHNESS.comment=활성화된 경우, Smooth을 결정하는 데 사용되는 스펙큘러 텍스처 채널이 Rough으로 인식됩니다(0 = 완전히 매끄럽고, 255 = 최대한 거침). SEUS는 기본적으로 Smooth(0 = 최대한 거침, 255 = 완전히 매끄럽)를 사용합니다.
+option.PHYSICALLY_BASED_MAX_ROUGHNESS=물리 기반 최대 거칠기
+option.PHYSICALLY_BASED_MAX_ROUGHNESS.comment=비활성화된 경우, 100% 거친 재료에는 반사적 하이라이트가 없습니다(이전 SEUS 동작). 활성화된 경우, 심한 반사적 하이라이트가 없는 100% 거친 재료에도 약간의 반사적 하이라이트가 나타납니다. "전체 광선 추적 반사"가 켜져 있는 경우 이로 인해 성능 저하가 발생할 수 있습니다!
+option.FULL_RT_REFLECTIONS=전체 광선 추적 반사
+option.FULL_RT_REFLECTIONS.comment=끄기: 높은 매끄러움 값을 가진 표면만 반사를 렌더링합니다. 켜기: 더 거친 표면도 반사를 렌더링합니다(계산 비용이 더 높음). 이로 인해 다수의 반 거친 표면으로 큰 성능 저하가 발생할 수 있습니다!
+option.SPEC_CHANNEL_SMOOTHNESS=스펙큘러 텍스처 매끄러움 채널
+option.SPEC_CHANNEL_SMOOTHNESS.comment=매끄러움을 결정하기 위해 스펙큘러 텍스처에서 읽어야 하는 채널(빨강, 녹색, 파랑 또는 알파)입니다. SEUS는 기본적으로 빨간 채널을 사용합니다.
+value.SPEC_CHANNEL_SMOOTHNESS.0=r
+value.SPEC_CHANNEL_SMOOTHNESS.1=g
+value.SPEC_CHANNEL_SMOOTHNESS.2=b
+value.SPEC_CHANNEL_SMOOTHNESS.3=a
+option.SPEC_CHANNEL_METALNESS=스펙큘러 텍스처 금속성 채널
+option.SPEC_CHANNEL_METALNESS.comment=금속성을 결정하기 위해 스펙큘러 텍스처에서 읽어야 하는 채널(빨강, 녹색, 파랑 또는 알파)입니다. SEUS는 기본적으로 빨간 채널을 사용합니다.
+value.SPEC_CHANNEL_METALNESS.0=r
+value.SPEC_CHANNEL_METALNESS.1=g
+value.SPEC_CHANNEL_METALNESS.2=b
+value.SPEC_CHANNEL_METALNESS.3=a
+option.SPEC_CHANNEL_EMISSIVE=스펙큘러 텍스처 발광 채널
+option.SPEC_CHANNEL_EMISSIVE.comment=발광을 결정하기 위해 스펙큘러 텍스처에서 읽어야 하는 채널(빨강, 녹색, 파랑 또는 알파)입니다. SEUS는 기본적으로 빨간 채널을 사용합니다.
+value.SPEC_CHANNEL_EMISSIVE.0=r
+value.SPEC_CHANNEL_EMISSIVE.1=g
+value.SPEC_CHANNEL_EMISSIVE.2=b
+value.SPEC_CHANNEL_EMISSIVE.3=a
+
+
+# RayTracing
+option.GI_RAY_COUNT=레이트레이싱 샘플 수
+option.GI_RAY_COUNT.comment=레이트레이싱의 샘플 수입니다. 더 높은 값은 노이즈를 크게 줄일 수 있습니다. 성능에 큰 영향을 미칩니다!
+option.GI_SECONDARY_SAMPLES=보조 GI 샘플 수
+option.GI_SECONDARY_SAMPLES.comment=보조 GI 트레이싱을 위해 추적할 샘플의 수입니다. 더 많은 샘플은 성능 비용을 지불하면서 주로 반사에서 볼 수 있는 "디스코 바닥" 아티팩트를 줄입니다.
+option.DIFFUSE_TRACE_LENGTH=확산 GI 트레이싱 길이
+option.DIFFUSE_TRACE_LENGTH.comment=패스트레이싱된 확산 GI의 최대 레이 길이입니다. 더 높은 값은 더 정확한 조명을 제공하며 더 먼 표면을 고려하는 데 사용되지만 더 높은 비용을 지불합니다. 낮은 값은 큰 실내 공간에서 누출을 일으킬 수 있습니다!
+option.RAYTRACE_GEOMETRY_QUALITY=지오메트리 트레이싱 품질
+option.RAYTRACE_GEOMETRY_QUALITY.comment=낮음 - 블록이 특수한 모델(반블록, 계단 등)일 경우 레이트레이싱되지 않습니다. 중간 - 일부 블록 모델(계단, 반블록, 문, 울타리)이 레이트레이싱됩니다. 높음 - 모든 블록(지금까지 작성된)이 모델로 레이트레이싱됩니다. 낮은 설정은 아티팩트를 일으키지만 더 빠릅니다. 높은 설정은 로딩 시간을 크게 증가시킵니다.
+value.RAYTRACE_GEOMETRY_QUALITY.0=낮음
+value.RAYTRACE_GEOMETRY_QUALITY.1=중간
+value.RAYTRACE_GEOMETRY_QUALITY.2=높음
+option.MAX_BLEND_WEIGHT=최대 혼합 가중치
+option.MAX_BLEND_WEIGHT.comment=노이즈 제거를 위한 프레임 혼합 시 최대 가중치. 낮은 값은 시간이 지남에 따라 GI 변경을 일으킵니다. 높은 값은 추적 길을 일으킵니다.
+option.GI_SCREEN_SPACE_TRACING=스크린 스페이스 GI 트레이싱
+option.GI_SCREEN_SPACE_TRACING.comment=스크린 스페이스의 표면이 간접 그림자와 조명을 간섭 할 수 있도록 합니다. 키지 않을지 작동되지 않습니다(몹, 풀 등).
+option.SUNLIGHT_LEAK_FIX=태양 빛 누출 수정
+option.SUNLIGHT_LEAK_FIX.comment=동굴에서 태양빛이 누출되는 것을 수정합니다. 큰 야외 건물 구조물과 일부 문제가 발생할 수 있습니다!
+option.MOD_BLOCK_SUPPORT=모드 블록 지원
+option.MOD_BLOCK_SUPPORT.comment=모드 블록을 볼렉스화에 고려합니다. 일부 리소스 팩에서 Optifine CTM과 문제가 있을 수 있습니다. 비활성화된 경우 패스 트레이싱에서 모드 블록을 공기로 간주합니다.
+option.CAVE_GI_LEAK_FIX=완전한 동굴 GI 누출 수정
+option.CAVE_GI_LEAK_FIX.comment=동굴에서 하늘과 태양의 간접 빛 누출을 수정하려고 합니다. 하늘 빛 레벨이 제로인 표면에서는 하늘이나 태양의 직접 GI를 허용하지 않고, 플레이어가 오랜 시간 동안 하늘 빛 레벨이 제로인 지역에 서 있으면 하늘과 태양 GI를 아예 허용하지 않습니다. 큰 부상 구조물은 가짜 양성을 일으킬 수 있고, 일부 GI가 누락될 수 있습니다.
+option.SHAPE_CALC_FUNC=지오메트리 렌더 함수
+option.SHAPE_CALC_FUNC.comment=패스 트레이싱에서 지오메트리 렌더링에 사용되는 함수입니다. 더 짧은 컴파일 시간 또는 더 나은 성능을 위해 선택할 수 있습니다.
+value.SHAPE_CALC_FUNC.0=컴파일 시간
+value.SHAPE_CALC_FUNC.1=성능
+
+
+# Reflection
+option.REFLECTION_TRACE_LENGTH=반사 트레이싱 길이
+option.REFLECTION_TRACE_LENGTH.comment=레이트레이싱된 반사의 최대 길이입니다. 더 높은 값은 더 멀리 반사를 추적합니다. 낮은 값은 큰 실내 공간에서 누출을 일으킬 수 있습니다!
+option.SCREEN_SPACE_CONNECTION_REFLECTION=스크린 스페이스 접촉 반사
+option.SCREEN_SPACE_CONNECTION_REFLECTION.comment=패스 트레이싱된 복셀 위치의 스크린 스페이스 데이터를 사용하는 스크린 스페이스 반사입니다. 일부 특수 모델 블록은 올바르게 렌더링되지 않을 수 있습니다.
+option.REFLECTION_SCREEN_SPACE_TRACING=스크린 스페이스 반사 트레이싱
+option.REFLECTION_SCREEN_SPACE_TRACING.comment=스크린 스페이스의 표면이 그렇지 않을 경우 반사에 나타날 수 있도록 합니다(몹, 풀 등).
+
+# 물
+option.WATER_PARALLAX=물 패럴랙스
+option.WATER_PARALLAX.comment=생성된 패럴랙스 데이터로 물 물결을 렌더링합니다.
+option.WATER_WAVE_HEIGHT=물 물결 높이
+option.WATER_WAVE_HEIGHT.comment=물 물결의 높이입니다.
+option.WATER_FOG_DENSITY=물 안개 밀도
+option.WATER_FOG_DENSITY.comment=물이 얼마나 흐릿하게 나타날지 결정합니다. 더 맑은 물을 위해 이 값을 낮추세요.
+option.UNDERWATER_REFLECTION_STRENGTH=반사 가장자리 부드러움
+option.UNDERWATER_REFLECTION_STRENGTH.comment=물 아래의 반사와 굴절의 연결입니다.
+
+# Post Processing
+option.TONEMAP_CURVE=톤맵 곡선
+option.TONEMAP_CURVE.comment=하이라이트의 강도를 조절합니다. 낮은 값은 더 영화 스타일을 제공하고, 높은 값은 더 생동감 있고 자연스러운 모습을 제공합니다. 기본값: 5.5
+option.TONEMAP_OPERATOR=톤맵 연산자
+option.TONEMAP_OPERATOR.comment=각 톤맵 연산자는 내부 HDR 색상 정보를 모니터/디스플레이의 제한된 범위와 잘 어울리는 색상 범위로 표시하는 다른 방법을 정의합니다. 각 연산자는 전체 최종 이미지에 다른 느낌을 제공합니다.
+option.EXPOSURE=노출
+option.EXPOSURE.comment=이미지의 전체 밝기/노출을 제어합니다. 더 높은 값은 더 밝은 이미지를 제공합니다. 기본값: 1.0
+option.SATURATION=채도
+option.SATURATION.comment=채도 조정. 더 높은 값은 더 다채로운 이미지를 제공합니다. 기본값: 1.0
+option.GAMMA=감마
+option.GAMMA.comment=감마 조정. 낮은 값은 그림자를 어둡게 만듭니다. 높은 값은 그림자를 밝게 만듭니다. 기본값: 1.0
+option.BLOOM_AMOUNT=블룸 강도
+option.BLOOM_AMOUNT.comment=이미지에 적용할 블룸의 양
+value.BLOOM_AMOUNT.0.0=끄기
+option.BLACK_DEPTH=검정 깊이
+option.BLACK_DEPTH.comment=이미지의 검은색/어두운 조명의 강도를 조정합니다. 더 높은 값은 더 어둔 조명을 검은 색으로 밀어 넣을 것입니다. 0은 이 효과를 비활성화합니다.
+value.BLACK_DEPTH.0.0=끄기
+option.WHITE_CLIP=화이트 클립
+option.WHITE_CLIP.comment=밝은 색상을 흰색으로 클립합니다.
+value.WHITE_CLIP.0.0=끄기
+option.MOTION_BLUR=모션 블러
+option.MOTION_BLUR.comment=모션을 흐릿하게 보이게 합니다.
+option.MOTION_BLUR_INTENSITY=모션 블러 강도
+option.MOTION_BLUR_INTENSITY.comment=모션 블러의 강도입니다. 더 높은 값은 모션과 더 많은 흐림을 일으킵니다.
+option.POST_SHARPENING=포스트 샤픈링
+option.POST_SHARPENING.comment=최종 표시 전에 이미지에 적용할 샤픈링 양
+option.DEPTH_OF_FIELD=깊이 효과
+option.DEPTH_OF_FIELD.comment=깊이 효과 (DoF)
+option.DOF_STRENGTH=깊이 효과 강도
+option.DOF_STRENGTH.comment=깊이 효과의 강도
+# 안티 앨리어싱
+option.FINAL_FXAA=FXAA 패스
+option.FINAL_FXAA.comment=임시 안티 앨리어싱 이후에 적용할 FXAA 패스의 횟수
+option.PIXEL_LOOK=픽셀 룩
+option.PIXEL_LOOK.comment=최종 이미지의 미세한 모양을 제어합니다. 샤프: 더 날카로운 이미지를 원하는 경우
+value.PIXEL_LOOK.0=샤프
+value.PIXEL_LOOK.1=필믹
+option.SKIP_AA=모든 안티 앨리어싱 건너뛰기
+option.SKIP_AA.comment=설명 목적! 모든 안티 앨리어싱/임시 재구성을 비활성화합니다!
+option.AA_STYLE=AA 스타일
+option.AA_STYLE.comment=안정적: 안티 앨리어싱은 더 안정적인 이미지를 위해 히스토리를 블렌딩하는 것을 선호합니다. 반응적: 안티 앨리어싱은 변경이 발생할 때 이미지를 더 빨리 새로 고치려고 합니다.
+value.AA_STYLE.0=안정적
+value.AA_STYLE.1=반응적
+
+
+# Others
+option.VISUALIZE_DANGEROUS_LIGHT_LEVEL=위험한 광원 레벨 시각화
+option.VISUALIZE_DANGEROUS_LIGHT_LEVEL.comment=활성화하면 블록 광원 레벨이 7 이하인 영역(몹이 스폰될 수 있는 곳)이 빨간색으로 강조됩니다. 서바이벌 게임에서 지역의 안전 여부를 판단하는 데 유용합니다. 하늘 광원 레벨은 고려하지 않습니다.
+option.SKYLIGHT_FIX=실험: 하늘 광원 수정
+option.SKYLIGHT_FIX.comment=실험적인 옵션으로, Minecraft 1.14 이후 불투명한 방출 블록 주위의 잘못된 하늘 광원 레벨을 수정하려고 시도합니다.
+option.WEATHER=날씨
+option.WEATHER.comment=비와 눈을 렌더링합니다. 실험적이고 버그가 있습니다.
+
