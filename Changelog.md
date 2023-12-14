@@ -1,3 +1,12 @@
+## HRR 2.1 v1.14
+
+* Added 1.20.3 support;
+* Added ko_kr language file by @DominoKorean (you can add your own by creating pull requests, but plz read the requirements in readme.md);
+* Improved GI filter to match HRR3 behavoir;
+* Fixed fence gates on some blockstates;
+* Fixed volumetric light offset in low Minecraft versions;
+* Fixed black screen when sun angle is set to ±90;
+
 ## HRR 2.1 v1.13.1
 
 * Fixed compiling error with pixel look set to 1;
