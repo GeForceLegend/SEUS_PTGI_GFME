@@ -1,0 +1,239 @@
+# Modified by GeForceLegend, part of text correction by Yark. No permission for any payment
+# Translate by new1271
+option.Version=版本
+value.Version.HRR210_GFME=HRR 2.1 GFME
+option.Version.comment=基於 SEUS PTGI HRR Test 2.1 的修改版本. 由 GeForceLegend 修改
+
+screen.Atmosphere=大氣...
+screen.Atmosphere.comment=雲層和體積光等大氣效果
+screen.Shadow=陰影...
+screen.Shadow.comment=陰影的精細度、渲染距離與一些輔助陰影等
+screen.Lighting=光照...
+screen.Lighting.comment=陽光的強度和顏色，以及方塊的發光強度等
+screen.Texture=材質...
+screen.Texture.comment=材質的解析度、PBR 材質與視差等
+screen.Parallax=視差...
+screen.Parallax.comment=視差的開關、視差深度與平滑視差等
+screen.Specular=PBR 材質...
+screen.Specular.comment=PBR 材質的相關設定
+screen.RayTracing=光線追蹤...
+screen.RayTracing.comment=光線追蹤中的一切
+screen.Reflection=反射...
+screen.Reflection.comment=反射的距離及一些輔助反射等
+screen.Water=水...
+screen.Water.comment=水波與水霧等水體效果
+screen.Postprocessing=後期處理...
+screen.Postprocessing.comment=畫面的色彩和風格選項
+screen.AntiAliasing=抗鋸齒...
+screen.Others=其他...
+screen.Others.comment=一些雜項設定
+
+# 大氣選項
+option.CLOUDS_IN_GI=天空光照雲色計算（光線追蹤的範圍內）
+option.CLOUDS_IN_GI.comment=在光線追蹤時計算雲的顏色。關閉後會使光線追蹤時的天空光照變藍
+option.CLOUDS_IN_AMBIENT=天空光照雲色計算（光線追蹤的範圍外）
+option.CLOUDS_IN_AMBIENT.comment=在光線追蹤範圍之外的天空光照中計算雲的顏色。關閉後會使光線追蹤範圍之外的天空光照變藍
+option.CIRRUS_CLOUDS=卷雲
+option.CIRRUS_CLOUDS.comment=高空中較為稀薄的雲
+option.CUMULUS_CLOUDS=積雲
+option.CUMULUS_CLOUDS.comment=較低並且厚實的雲
+option.CLOUDS_BLOCKY=方塊雲
+option.CLOUDS_BLOCKY.comment=讓雲層的分布看起來更有方塊感
+option.GODRAYS=體積光
+option.GODRAYS.comment=陽光在大氣中產生的立體光束，不會影響水下的體積光
+option.GODRAYS_STAINED_GLASS_TINT=體積光染色
+option.GODRAYS_STAINED_GLASS_TINT.comment=讓體積光在穿過半透明方塊時改變顏色
+option.VOLUMETRIC_LIGHT_STRENGTH=體積光強度
+option.VOLUMETRIC_LIGHT_STRENGTH.comment=體積光的密度和亮度，同時影響大氣和水下的體積光
+
+# 陰影選項
+option.shadowDistance=陰影距離
+option.shadowDistance.comment=最遠可看到陰影的距離。調高可獲得更好的遠處陰影，調低可獲得更好的近處陰影
+option.shadowMapResolution=陰影精度/光追範圍
+option.shadowMapResolution.comment=陰影的精細度，同時決定光線追蹤的渲染範圍。16k/18區塊至少需要6GB顯存；32k/32區塊至少需要20GB顯存!
+value.shadowMapResolution.4096=4k/5區塊
+value.shadowMapResolution.8192=8k/10區塊
+value.shadowMapResolution.16384=16k/18區塊
+value.shadowMapResolution.32768=32k/32區塊
+option.SHADOW_MAP_BIAS=近處陰影精度
+option.SHADOW_MAP_BIAS.comment=通過陰影貼圖的形變來提高近處陰影精細度。更高的值會讓近處陰影更加精細，但是會降低遠處陰影的精細度
+option.sunPathRotation=太陽軌道角度
+option.sunPathRotation.comment=太陽軌道的偏轉角度
+option.RAY_TRACE_SHADOW=光線追蹤陰影
+option.RAY_TRACE_SHADOW.comment=使用光線追蹤的銜接陰影，銜接準確性極佳但不支援部分方塊。建議在螢幕空間陰影開啟時關閉此設定以減少性能消耗
+option.SCREEN_SPACE_SHADOW=螢幕空間陰影
+option.SCREEN_SPACE_SHADOW.comment=PTGI 預設的銜接陰影，準確性不佳但支援所有不透明方塊，建議在開啟時關閉光線追蹤陰影以減少性能消耗
+option.CLOUD_SHADOW=雲影
+option.CLOUD_SHADOW.comment=雲遮擋陽光所產生的陰影，同時影響體積光中是否計算雲
+
+# 光照選項
+option.SUNLIGHT_BRIGHTNESS=日光強度
+option.SUNLIGHT_BRIGHTNESS.comment=太陽光的強度
+option.TORCHLIGHT_COLOR_TEMPERATURE=光源色溫
+option.TORCHLIGHT_COLOR_TEMPERATURE.comment=控制普通火把、燈籠等光源以及手持光源的顏色，值越高色溫越冷
+option.GI_LIGHT_BLOCK_INTENSITY=方塊光源亮度
+option.GI_LIGHT_BLOCK_INTENSITY.comment=完整照明方塊（螢光石、海燈籠等）的亮度，在反射裡正常渲染的光源
+option.GI_LIGHT_TORCH_INTENSITY=火把光源亮度
+option.GI_LIGHT_TORCH_INTENSITY.comment=不完整照明方塊（火把、燈籠等）的亮度. 在反射里被渲染為球狀的光源
+option.HELD_LIGHT=手持光源
+option.HELD_LIGHT.comment=照亮玩家周圍的環境。光源顏色只受色溫控制
+option.GI_SUNLIGHT_STAINED_GLASS_TINT=光線追蹤日光染色
+option.GI_SUNLIGHT_STAINED_GLASS_TINT.comment=在光線追蹤計算陽光時允許染色玻璃將其染色
+option.GLOWING_REDSTONE_BLOCK=紅石方塊發光
+option.GLOWING_EMERALD_BLOCK=綠寶石方塊發光
+option.GLOWING_LAPIS_LAZULI_BLOCK=青金石方塊發光
+
+# 材質選項
+option.TEXTURE_RESOLUTION=材質解析度
+option.TEXTURE_RESOLUTION.comment=將此選項調整為目前資源包的解析度。此選項會影響視差、光線追蹤及反射的渲染
+value.TEXTURE_RESOLUTION.0=自動檢測
+option.NORMAL_MAP_STRENGTH=法線強度
+option.NORMAL_MAP_STRENGTH.comment=法線貼圖的強度。更高的值會使凹凸感更強
+option.ANISOTROPIC_LOD_BIAS=各向異性層次細節
+option.ANISOTROPIC_LOD_BIAS.comment=開啟後會讓低可視角度的材質擁有更多細節，類似於材質層次細節
+option.TEXTURE_LOD_BIAS=材質層次細節
+option.TEXTURE_LOD_BIAS.comment=更高的值會使材質擁有更多的細節，但是會導致圖像抖動、產生拖影並影響性能。更低的值會使圖像更穩定並提升性能，但是會導致遠處及低可視角度的材質細節下降 
+option.WET_CAVE_EFFECT=潮濕洞穴效果
+option.WET_CAVE_EFFECT.comment=實驗性選項! 沒有被天空或者方塊照亮的表面會變得潮濕
+option.FORCE_WET_EFFECT=雨天積水
+option.FORCE_WET_EFFECT.comment=下雨時露天的表面會變得潮濕。關閉此選項後，PTGI 會使用視差的數據來計算法線
+option.RAIN_SPLASH_EFFECT=雨滴漣漪
+option.RAIN_SPLASH_EFFECT.comment=下雨時露天的表面會有雨滴滴落形成的環狀波紋
+option.RAIN_SPLASH_BILATERAL=平滑雨滴漣漪
+option.RAIN_SPLASH_BILATERAL.comment=使雨滴漣漪變得更加平滑
+
+# 視差選項
+option.PARALLAX=視差
+option.PARALLAX.comment=模擬從不同角度觀察不平整的表面所形成的細節差異。如果關閉了雨天積水效果，推薦在使用的材質沒有視差時關閉
+option.SMOOTH_PARALLAX=平滑視差
+option.SMOOTH_PARALLAX.comment=使高度差的過渡更加平滑。建議在使用高解析度材質時啟用，使用像素風材質時禁用
+option.PARALLAX_DEPTH=視差深度
+option.PARALLAX_DEPTH.comment=視差的深度，值越高視差效果更明顯
+option.PARALLAX_DISTANCE=視差距離
+option.PARALLAX_DISTANCE.comment=視差渲染的距離
+
+# PBR 材質選項
+option.SPEC_EMISSIVE=自發光材質
+option.SPEC_EMISSIVE.comment=使用目前資源包內 PBR 貼圖中的發光資訊，而不是光影中硬編碼的方塊
+option.SPEC_SMOOTHNESS_AS_ROUGHNESS=光滑度轉為粗糙度
+option.SPEC_SMOOTHNESS_AS_ROUGHNESS.comment=將材質的光滑度反相為粗糙度
+option.PHYSICALLY_BASED_MAX_ROUGHNESS=基於物理下的最大粗糙度
+option.PHYSICALLY_BASED_MAX_ROUGHNESS.comment=開啟後，即使是完全粗糙的表面也會微弱的反射光
+option.FULL_RT_REFLECTIONS=完整反射
+option.FULL_RT_REFLECTIONS.comment=讓所有粗糙度的表面均能進行反射。關閉後僅有較為光滑的面能進行反射
+option.SPEC_CHANNEL_SMOOTHNESS=光滑度通道
+option.SPEC_CHANNEL_SMOOTHNESS.comment=决定材質光滑度的通道
+value.SPEC_CHANNEL_SMOOTHNESS.0=Red
+value.SPEC_CHANNEL_SMOOTHNESS.1=Green
+value.SPEC_CHANNEL_SMOOTHNESS.2=Blue
+value.SPEC_CHANNEL_SMOOTHNESS.3=Alpha
+option.SPEC_CHANNEL_METALNESS=金屬度通道
+option.SPEC_CHANNEL_METALNESS.comment=决定材質金屬度的通道
+value.SPEC_CHANNEL_METALNESS.0=Red
+value.SPEC_CHANNEL_METALNESS.1=Green
+value.SPEC_CHANNEL_METALNESS.2=Blue
+value.SPEC_CHANNEL_METALNESS.3=Alpha
+option.SPEC_CHANNEL_EMISSIVE=自發光通道
+option.SPEC_CHANNEL_EMISSIVE.comment=决定材質自發光亮度的通道
+value.SPEC_CHANNEL_EMISSIVE.0=Red
+value.SPEC_CHANNEL_EMISSIVE.1=Green
+value.SPEC_CHANNEL_EMISSIVE.2=Blue
+value.SPEC_CHANNEL_EMISSIVE.3=Alpha
+
+# 光線追蹤選項
+option.GI_RAY_COUNT=光線追蹤採樣數
+option.GI_RAY_COUNT.comment=每幀的光線追蹤採樣數。高一點的值可以有效緩解噪點問題（極其影響性能!）
+option.GI_SECONDARY_SAMPLES=輔助光線追蹤採樣數
+option.GI_SECONDARY_SAMPLES.comment=每幀在運算時的輔助光線追蹤採樣數。高一點的值可以緩解地面間歇性閃光的問題
+option.DIFFUSE_TRACE_LENGTH=光線追蹤距離
+option.DIFFUSE_TRACE_LENGTH.comment=光線追蹤中每根光線的最遠追蹤距離。追蹤距離內沒有檢測到方塊則視為接受天空光照
+option.RAYTRACE_GEOMETRY_QUALITY=幾何體渲染標準
+option.RAYTRACE_GEOMETRY_QUALITY.comment=光線追蹤中幾何體的渲染品質。低標準時所有方塊的遮光體積均為完整方塊；中標準時部分方塊以預先編碼好的遮光體積參與光線追蹤計算；高標準時所有已編碼遮光體積的方塊均已其遮光體積參與光線追蹤。高品質下會嚴重延長設定更改後的光影編譯等待時間
+value.RAYTRACE_GEOMETRY_QUALITY.0=低
+value.RAYTRACE_GEOMETRY_QUALITY.1=中
+value.RAYTRACE_GEOMETRY_QUALITY.2=高
+option.MAX_BLEND_WEIGHT=最大幀混合比例
+option.MAX_BLEND_WEIGHT.comment=進行多幀疊加降噪時過往幀的最大混合比例。低一點的值會使環境光因隨機採樣所產生的變化更加明顯；高一點的值會讓拖影更加明顯
+option.GI_SCREEN_SPACE_TRACING=螢幕空間光線追蹤
+option.GI_SCREEN_SPACE_TRACING.comment=利用螢幕空間資訊進行的短距離光線追蹤。能處理草與實體等無法在世界空間光線追蹤內處理的物品（會導致一些陰影的錯位）
+option.SUNLIGHT_LEAK_FIX=陽光洩漏修復
+option.SUNLIGHT_LEAK_FIX.comment=修復洞穴和室內陽光洩漏的現象。大型懸空建築下方會出現原版光照產生的偽影
+option.MOD_BLOCK_SUPPORT=模組方塊支援
+option.MOD_BLOCK_SUPPORT.comment=將模組中的部分方塊寫入體素，有時會與 OptiFine 的連接材質產生衝突。關閉後模組方塊將不會影響環境光照與反射
+option.CAVE_GI_LEAK_FIX=洞穴內天空光照洩漏修復
+option.CAVE_GI_LEAK_FIX.comment=修復洞穴和室內天空光照的現象。大型懸空建築下方會出現原版光照產生的偽影
+option.SHAPE_CALC_FUNC=幾何體渲染傾向
+option.SHAPE_CALC_FUNC.comment=改變在路徑追蹤時渲染已編碼之幾何體所使用的函數，可在更短的編譯時間和更高的幀率中做選擇
+value.SHAPE_CALC_FUNC.0=優化編譯時間
+value.SHAPE_CALC_FUNC.1=優化幀率
+
+# 反射選項
+option.REFLECTION_TRACE_LENGTH=反射距離
+option.REFLECTION_TRACE_LENGTH.comment=決定每個反射表面（鏡面、水面）能反射之最遠物體的距離（從反射表面開始計算的距離）。高一點的值可以反射更遠的物體，追蹤距離內沒有檢測到方塊則反射天空
+option.SCREEN_SPACE_CONNECTION_REFLECTION=螢幕空間銜接反射
+option.SCREEN_SPACE_CONNECTION_REFLECTION.comment=在光線追蹤反射的基礎上提取螢幕空間的資訊進行覆蓋，可以處理多材質方塊在反射中材質不對的情況。對未編碼遮光體積的方塊處理會較為異常
+option.REFLECTION_SCREEN_SPACE_TRACING=螢幕空間反射
+option.REFLECTION_SCREEN_SPACE_TRACING.comment=讓螢幕內的所有物體都能進行反射。（對於不能在光線追蹤中渲染的物體（生物、草等），則使用反射鏡像。）
+
+# 水體選項
+option.WATER_PARALLAX=水面視差
+option.WATER_PARALLAX.comment=在水面的波浪中模擬視差
+option.WATER_WAVE_HEIGHT=水波高度
+option.WATER_WAVE_HEIGHT.comment=水體表面波浪的高低差
+option.WATER_FOG_DENSITY=水雾密度
+option.WATER_FOG_DENSITY.comment=水雾的密度。高一點的值會使水雾更濃
+option.UNDERWATER_REFLECTION_STRENGTH=全反射邊緣過渡強度
+option.UNDERWATER_REFLECTION_STRENGTH.comment=水下折射和全反射的過渡效果強度
+
+# 後期處理
+option.TONEMAP_CURVE=色彩映射強度
+option.TONEMAP_CURVE.comment=色彩映射曲線的強度。高一點的值會讓不同映射曲線的風格化更明顯，同時影響亮度和鮮豔度
+option.TONEMAP_OPERATOR=映射曲線類型
+option.TONEMAP_OPERATOR.comment=色彩映射曲線的算法
+option.EXPOSURE=曝光
+option.EXPOSURE.comment=控制全局亮度/曝光度。值越高畫面越明亮
+option.SATURATION=飽和度
+option.SATURATION.comment=校準畫面飽和程度。值越高畫面的色彩越鮮豔
+option.GAMMA=伽馬值
+option.GAMMA.comment=校準畫面的伽馬值。值越低陰影顏色越暗；值越高陰影顏色越亮；過高的值會使畫面發灰
+option.BLOOM_AMOUNT=泛光強度
+option.BLOOM_AMOUNT.comment=在明亮的區域產生模糊的炫光效果。值越高泛光越明顯；過高的值可能會發生色彩溢出而導致反色
+value.BLOOM_AMOUNT.0.0=禁用
+option.BLACK_DEPTH=暗部增益
+option.BLACK_DEPTH.comment=校準暗處顏色的深度。值越高增益區域越大
+value.BLACK_DEPTH.0.0=禁用
+option.WHITE_CLIP=高光增益
+option.WHITE_CLIP.comment=將高亮區域直接視為純白。值越高增益區域越大
+value.WHITE_CLIP.0.0=禁用
+option.MOTION_BLUR=動態模糊
+option.MOTION_BLUR.comment=模擬運動時攝影機出現的畫面模糊效果，增強畫面的活動感
+option.MOTION_BLUR_INTENSITY=動態模糊強度
+option.MOTION_BLUR_INTENSITY.comment=動態模糊所產生之效果的強度。值越高畫面越模糊
+option.POST_SHARPENING=銳利化
+option.POST_SHARPENING.comment=將畫面中的像素進行銳利化處理。值越高畫面越清晰；過高的值會使畫面有雕刻感
+option.DEPTH_OF_FIELD=景深
+option.DEPTH_OF_FIELD.comment=模糊鏡頭聚焦處以外的物體
+option.DOF_STRENGTH=景深強度
+option.DOF_STRENGTH.comment=景深的模糊強度
+
+#抗鋸齒處理
+option.FINAL_FXAA=後期抗鋸齒處理數
+option.FINAL_FXAA.comment=在畫面輸出之前再次進行抗鋸齒處理。高一點的值會讓畫面更加平滑但可能略顯模糊
+option.PIXEL_LOOK=像素風格
+option.PIXEL_LOOK.comment=最終畫面的觀感。銳利模式會讓畫面更清晰；電影模式會讓畫面較為柔和
+value.PIXEL_LOOK.0=銳利
+value.PIXEL_LOOK.1=電影
+option.SKIP_AA=§c*§r 忽略抗鋸齒
+option.SKIP_AA.comment=僅為示範用的功能! 跳過所有抗鋸齒處理直接輸出圖像
+option.AA_STYLE=抗鋸齒傾向
+option.AA_STYLE.comment=抗鋸齒處理時的傾向。穩定模式會優先累積過往幀來獲得更穩定的畫面；靈敏模式會在運動時丟棄過往幀來獲得更清晰的畫面
+value.AA_STYLE.0=穩定
+value.AA_STYLE.1=靈敏
+
+# 其它
+option.VISUALIZE_DANGEROUS_LIGHT_LEVEL=危險亮度可視化
+option.VISUALIZE_DANGEROUS_LIGHT_LEVEL.comment=標記那些亮度低到能生怪的區域
+option.SKYLIGHT_FIX=天空光照修復
+option.SKYLIGHT_FIX.comment=實驗性選項，嘗試修復 1.13 後方塊光源周圍的原版天空光照等級異常的問題
+option.WEATHER=天氣
+option.WEATHER.comment=渲染雨和雪等的天氣效果。只是勉強能用的水平且 bug 較多
