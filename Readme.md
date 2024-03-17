@@ -43,7 +43,7 @@ If there is nothing happened while double clicking jar, you can run this jar in 
 
 ### Iris version 1.5.0 to 1.6.1X:
 
-- block.properties parsing does not work perfectly, as Iris just deletes comments in block.properties, which may cause some issue on `#else` macro. I'm not sure if this really caused any problem, but of course their way handiling macros block.properties is not good enough.
+- block.properties parsing does not work perfectly, as Iris just deletes comments in block.properties, which may cause some issue on `#else` macro. I'm not sure if this really caused any problem, but of course their way handiling macros in block.properties is not good enough.
 
 ### Iris version above 1.6.1X (Probably 1.6.12 or 1.6.13?):
 
