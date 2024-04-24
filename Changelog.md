@@ -1,3 +1,14 @@
+## HRR 2.1 v1.15
+
+* Added 1.20.5 support;
+* Added Physics ocean support;
+* Added zh_tw language file by @new1271 ;
+* Ignored black background of texts;
+* Fixed snow in Physics mod;
+* Fixed specular texture when parallax is enabled;
+* Fixed materialID precision on some AMD device;
+* Fixed SUNLIGHT_BRIGHTNESS setting;
+
 ## HRR 2.1 v1.14
 
 * Added 1.20.3 support;
