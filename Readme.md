@@ -3,6 +3,10 @@
 
 A deeply modified version of SEUS PTGI
 
+## Compatible with [Optifine](https://optifine.net/home) above Minecraft 1.8.9 released after 04.12.2019
+
+## Compatible with [Iris](https://github.com/IrisShaders/Iris) above Iris 1.7.0
+
 ## Language Files
 
 If you want to add language file for your own language, create a pull request!
@@ -38,13 +42,3 @@ If there is nothing happened while double clicking jar, you can run this jar in 
 ![Metal_caustics.png](Images/Metal_caustics.png)
 
 ### Many more small fixes and improvements for vanilla PTGI...
-
-## Compatible with [Iris](https://github.com/IrisShaders/Iris) above 1.5.0, with some bugs:
-
-### Iris version 1.5.0 to 1.6.1X:
-
-- block.properties parsing does not work perfectly, as Iris just deletes comments in block.properties, which may cause some issue on `#else` macro. I'm not sure if this really caused any problem, but of course their way handiling macros in block.properties is not good enough.
-
-### Iris version above 1.6.1X (Probably 1.6.12 or 1.6.13?):
-
-- block.properties parsing is changed for unknown reason, causing macros in block.properties is parsed incorrectly, and tons of blocks in block.properties cannot get correct blockID, and lose their special shape in path tracing.
