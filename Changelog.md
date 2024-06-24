@@ -1,3 +1,9 @@
+## HRR 2.1 v1.16
+
+* Added 1.21 support;
+* Added Distant Horizons support;
+* Improved distant screen space shadow on leaves;
+
 ## HRR 2.1 v1.15
 
 * Added 1.20.5 support;
