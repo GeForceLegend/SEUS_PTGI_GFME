@@ -1,12 +1,12 @@
 # Modified by GeForceLegend, part of text correction by Yark. No permission for any payment
 option.Version=Version
 value.Version.HRR210_GFME=HRR 2.1 GFME
-option.Version.comment=A deeply modified verion of PTGI HRR Test 2.1. Modified by GeForceLegend
+option.Version.comment=A deeply modified version of PTGI HRR Test 2.1. Modified by GeForceLegend
 
 screen.Atmosphere=Atmospherics...
-screen.Atmosphere.comment=Godrays, clouds, and atmosphere
+screen.Atmosphere.comment=Godrays, clouds and atmosphere
 screen.Shadow=Shadow...
-screen.Shadow.comment=Sahdow resolution, distance and more
+screen.Shadow.comment=Shadow resolution, distance and more
 screen.Lighting=Lighting...
 screen.Lighting.comment=Lighting colors and intensities
 screen.Texture=Textures...
