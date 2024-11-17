@@ -62,7 +62,7 @@ option.DH_SHADOW_FIX.comment=Partially fix shadow issue on huge flat surfaces ca
 option.RAY_TRACE_SHADOW=Ray Traced Shadow
 option.RAY_TRACE_SHADOW.comment=Ray traced shadow, can get exact connection shadow, but doesn't support some blocks
 option.SCREEN_SPACE_SHADOW=Screen Space Shadow
-option.SCREEN_SPACE_SHADOW.comment=Default connection shadow of PTGI, doesn't as exact as ray traced shadow, but supports all blocks and entities
+option.SCREEN_SPACE_SHADOW.comment=Default connection shadow of PTGI, isn't as exact as ray traced shadow, but supports all blocks and entities
 option.CLOUD_SHADOW=Cloud Shadow
 option.CLOUD_SHADOW.comment=Shadow of clouds. Affects Godrays too
 
