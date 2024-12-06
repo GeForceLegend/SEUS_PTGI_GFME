@@ -1,3 +1,12 @@
+## HRR 2.1 v1.17
+
+* Added support up to 1.21.4;
+* en_us.lang update from @LimeDragonBoi ;
+* Fixed path traced shadow will ignore the block in the same voxel of start position;
+* Fixed path traced shadow using wrong param;
+* Fixed caustics on certain height;
+* Fixed depth of DH terrain when projection matrix changes (related to IrisShaders/Iris#2534);
+
 ## HRR 2.1 v1.16
 
 * Added 1.21 support;
