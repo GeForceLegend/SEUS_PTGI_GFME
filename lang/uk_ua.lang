@@ -1,0 +1,239 @@
+# Modified by GeForceLegend, part of text correction by Yark. No permission for any payment
+option.Version=Версія
+value.Version.HRR210_GFME=HRR 2.1 GFME
+option.Version.comment=Глибоко модифікована версія PTGI HRR Test 2.1. Модифіковано GeForceLegend
+
+screen.Atmosphere=Атмосфера...
+screen.Atmosphere.comment=Божественні промені, хмари та атмосфера
+screen.Shadow=Тінь...
+screen.Shadow.comment=Роздільна здатність тіней, відстань та інше
+screen.Lighting=Освітлення...
+screen.Lighting.comment=Кольори та інтенсивність освітлення
+screen.Texture=Текстури...
+screen.Texture.comment=Все про відображення поверхонь та текстур
+screen.Parallax=Паралакс...
+screen.Parallax.comment=Налаштування паралаксу
+screen.Specular=Спекулярність
+screen.Specular.comment=Налаштування спекулярної текстури
+screen.RayTracing=Рей-трейсинг...
+screen.RayTracing.comment=Рей-трейсинг!
+screen.Reflection=Відбиття...
+screen.Reflection.comment=Довжина відбиттів та деякі відображення в просторі екрана
+screen.Water=Вода...
+screen.Water.comment=Хвилі на воді, туман та інше
+screen.Postprocessing=Налаштування постобробки
+screen.Postprocessing.comment=Колірне коригування, розмиття руху, фінальні ефекти
+screen.AntiAliasing=Антиаліасінг...
+screen.Others=Інші
+screen.Others.comment=Додаткові налаштування
+
+# Atmosphere
+option.CLOUDS_IN_GI=Хмари в GI
+option.CLOUDS_IN_GI.comment=Чи враховувати хмари при трасуванні світла GI. Дозволяє хмарам впливати на колір навколишнього освітлення за рахунок продуктивності
+option.CLOUDS_IN_AMBIENT=Хмари в амбієнтному освітленні
+option.CLOUDS_IN_AMBIENT.comment=Чи враховувати хмари в амбієнтному освітленні на великих відстанях. Покращує зв'язок на межі трасування променів за рахунок продуктивності
+option.CIRRUS_CLOUDS=Хмари Цирус
+option.CIRRUS_CLOUDS.comment=Чи малювати хмари цирус. Менше впливає на продуктивність, ніж купчасті хмари. Впливає на продуктивність, особливо якщо увімкнені хмари в GI та/або хмари у відбиттях
+option.CUMULUS_CLOUDS=Купчасті хмари
+option.CUMULUS_CLOUDS.comment=Чи малювати купчасті хмари. Впливає на продуктивність, особливо якщо увімкнені хмари в GI та/або хмари у відбиттях
+option.CLOUDS_BLOCKY=Блокоподібні хмари
+option.CLOUDS_BLOCKY.comment=Чи малювати купчасті хмари у вигляді блоків. Для Minecraft-стилю
+option.GODRAYS=Атмосферні промені світла
+option.GODRAYS.comment=Увімкнення об'ємного освітлення від сонячного світла (так звані "промені бога"), коли не під водою
+option.GODRAYS_STAINED_GLASS_TINT=Тоновані промені світла через вітражі
+option.GODRAYS_STAINED_GLASS_TINT.comment=Увімкнення тонування кольору променів світла через вітраж
+option.VOLUMETRIC_LIGHT_STRENGTH=Сила променів світла
+option.VOLUMETRIC_LIGHT_STRENGTH.comment=Сила променів світла, впливає на підводні промені
+
+# Shadow
+option.shadowDistance=Відстань тіні
+option.shadowDistance.comment=Відстань тіні. Задайте менше, якщо вам подобаються красиві ближні тіні. Задайте більше, якщо вам подобаються красиві віддалені тіні.
+option.shadowMapResolution=Роздільна здатність карти тіней
+option.shadowMapResolution.comment=Вищі значення впливають на продуктивність, але можуть забезпечити кращі тіні та збільшити відстань трасування шляхів. Будь ласка, збільшуйте відстань тіні одночасно. 16k / 18 чанків вимагають принаймні 6 ГБ VRAM. 32k / 32 чанків вимагають принаймні 20 ГБ VRAM.
+value.shadowMapResolution.4096=4k / 5 чанків
+value.shadowMapResolution.8192=8k / 10 чанків
+value.shadowMapResolution.16384=16k / 18 чанків
+value.shadowMapResolution.32768=32k / 32 чанки
+option.SHADOW_MAP_BIAS=Зміщення карти тіней
+option.SHADOW_MAP_BIAS.comment=Вищі значення можуть забезпечити кращі ближні тіні, але погіршують віддалені тіні
+option.sunPathRotation=Кут шляху сонця
+option.DH_SHADOW_FIX=Виправлення тіней DH
+option.DH_SHADOW_FIX.comment=Частково виправляє проблему з тінями на великих рівних поверхнях, спричинену Distant Horizons
+option.RAY_TRACE_SHADOW=Рей-трейсинг тіней
+option.RAY_TRACE_SHADOW.comment=Рей-трейсинг тіней, може дати точні тіні, але не підтримує деякі блоки
+option.SCREEN_SPACE_SHADOW=Тіні в екрані
+option.SCREEN_SPACE_SHADOW.comment=Типова тінь PTGI, не така точна, як тінь від рей-трейсингу, але підтримує всі блоки та сутності
+option.CLOUD_SHADOW=Тінь від хмар
+option.CLOUD_SHADOW.comment=Тінь від хмар. Також впливає на промені світла
+
+# Lighting
+option.SUNLIGHT_BRIGHTNESS=Інтенсивність сонячного світла
+option.SUNLIGHT_BRIGHTNESS.comment=Регулює відносну яскравість сонячного світла порівняно з небом/амбієнтним світлом.
+option.TORCHLIGHT_COLOR_TEMPERATURE=Температура кольору факела
+option.TORCHLIGHT_COLOR_TEMPERATURE.comment=Температура кольору світла факела в Кельвінах.
+option.GI_LIGHT_BLOCK_INTENSITY=Інтенсивність світла від блоків
+option.GI_LIGHT_BLOCK_INTENSITY.comment=Яскравість світла від твердих блоків
+option.GI_LIGHT_TORCH_INTENSITY=Інтенсивність світла від факелів
+option.GI_LIGHT_TORCH_INTENSITY.comment=Яскравість світла від факелів
+option.HELD_LIGHT=Динамічне світло від утримуваних предметів
+option.HELD_LIGHT.comment=Увімкнення світла, яке виділяють утримувані предмети в сцену. Світло, що виділяється, завжди має колір факела на даний момент!
+option.GI_SUNLIGHT_STAINED_GLASS_TINT=Тоноване сонячне світло в рей-трейсингу
+option.GI_SUNLIGHT_STAINED_GLASS_TINT.comment=Увімкнення тонування сонячного світла для рей-трейсингу
+option.GLOWING_LAPIS_LAZULI_BLOCK=Світячий блок лазуриту
+option.GLOWING_REDSTONE_BLOCK=Світячий блок червоного каменю
+option.GLOWING_EMERALD_BLOCK=Світячий блок смарагду
+
+# Textures
+option.TEXTURE_RESOLUTION=Роздільна здатність текстур
+option.TEXTURE_RESOLUTION.comment=Роздільна здатність поточного ресурс-паку. Це потрібно налаштувати правильно для відображень! Переконайтеся, що використовуєте ресурс-пак з постійною роздільною здатністю для правильних відображень!
+value.TEXTURE_RESOLUTION.0=Авто
+option.NORMAL_MAP_STRENGTH=Сила нормальної карти
+option.NORMAL_MAP_STRENGTH.comment=Сила нормальної карти
+option.ANISOTROPIC_LOD_BIAS=Анісотропне зміщення LOD
+option.ANISOTROPIC_LOD_BIAS.comment=При увімкненні зберігаються деталі на поверхнях при високих кутах нахилу. Подібні компроміси як у Texture LOD Bias.
+option.TEXTURE_LOD_BIAS=Зміщення LOD текстур
+option.TEXTURE_LOD_BIAS.comment=Вищі значення зберігають деталі текстур, але можуть призвести до нестабільності, ефекту привидів та зниження продуктивності. Нижчі значення покращують стабільність зображення та продуктивність, але можуть призвести до нижчої роздільної здатності текстур на відстані та при великих кутах нахилу.
+option.FORCE_WET_EFFECT=Примусове вологе ефект
+option.FORCE_WET_EFFECT.comment=Примушує всі поверхні ставати вологими під час дощу, стаючи відбивними
+option.WET_CAVE_EFFECT=Ефект вологих печер
+option.WET_CAVE_EFFECT.comment=Експериментально! Вологі поверхні, які не освітлюються небом або світлом блоків, що призводить до вологих печер, але також і до вологих не-печер.
+option.RAIN_SPLASH_EFFECT=Ефект бризок дощу
+option.RAIN_SPLASH_EFFECT.comment=Бризки/рівні води від дощу на воді та вологих блоках
+option.RAIN_SPLASH_BILATERAL=Плавні бризки дощу
+option.RAIN_SPLASH_BILATERAL.comment=Білатеральний фільтр для бризок дощу/рівнів. При увімкненні текстура бризків згладжується (без різких піксельних країв), що впливає на продуктивність
+
+# Parallax
+option.PARALLAX=Паралакс
+option.PARALLAX.comment=3D ефект для ресурс-паків з картами висоти. Переконайтеся, що роздільна здатність текстур налаштована правильно!
+option.SMOOTH_PARALLAX=Плавний паралакс
+option.SMOOTH_PARALLAX.comment=Згладжує результат POM, так що поверхня має плавні схили замість різких піксельних країв
+option.PARALLAX_DEPTH=Глибина паралакса
+option.PARALLAX_DEPTH.comment=Глибина ефекту паралакса
+option.PARALLAX_DISTANCE=Відстань паралакса
+option.PARALLAX_DISTANCE.comment=Відстань рендерингу паралакса
+
+# PBR
+option.SPEC_EMISSIVE=Спекулярна текстура емісивності
+option.SPEC_EMISSIVE.comment=Увімкнення емісивних даних з спекулярної текстури
+option.SPEC_SMOOTHNESS_AS_ROUGHNESS=Гладкість як шорсткість
+option.SPEC_SMOOTHNESS_AS_ROUGHNESS.comment=Якщо увімкнено, канал спекулярної текстури, що визначає гладкість, буде інтерпретуватись як шорсткість (0 = абсолютно гладка, 255 = максимально шорстка). SEUS використовує гладкість (0 = максимально шорстка, 255 = абсолютно гладка) за замовчуванням.
+option.PHYSICALLY_BASED_MAX_ROUGHNESS=Фізично обґрунтована максимальна шорсткість
+option.PHYSICALLY_BASED_MAX_ROUGHNESS.comment=Якщо вимкнено, матеріали з 100% шорсткістю не матимуть спекулярних відблисків (старе поводження SEUS). Якщо увімкнено, навіть матеріали з 100% шорсткістю все одно матимуть деякі тонкі спекулярні відблиски. Це може викликати зниження продуктивності, якщо увімкнено "Повні відблиски за допомогою трасування променів!"
+option.FULL_RT_REFLECTIONS=Повні відблиски за допомогою трасування променів
+option.FULL_RT_REFLECTIONS.comment=ВИМК: тільки поверхні з високими значеннями гладкості відображатимуть відблиски. УВІМК: дозволяє більш шорстким поверхням відображати відблиски (вищі витрати на обчислення). Це може призвести до значного зниження продуктивності при великій кількості напівшорстких поверхонь!
+option.SPEC_CHANNEL_SMOOTHNESS=Канал гладкості текстури спекулярного
+option.SPEC_CHANNEL_SMOOTHNESS.comment=Який канал (червоний, зелений, синій або альфа) читати з текстури спекулярного для визначення гладкості. SEUS за замовчуванням використовує червоний канал
+value.SPEC_CHANNEL_SMOOTHNESS.0=r
+value.SPEC_CHANNEL_SMOOTHNESS.1=g
+value.SPEC_CHANNEL_SMOOTHNESS.2=b
+value.SPEC_CHANNEL_SMOOTHNESS.3=a
+option.SPEC_CHANNEL_METALNESS=Канал металевості текстури спекулярного
+option.SPEC_CHANNEL_METALNESS.comment=Який канал (червоний, зелений, синій або альфа) читати з текстури спекулярного для визначення металевості. SEUS за замовчуванням використовує червоний канал
+value.SPEC_CHANNEL_METALNESS.0=r
+value.SPEC_CHANNEL_METALNESS.1=g
+value.SPEC_CHANNEL_METALNESS.2=b
+value.SPEC_CHANNEL_METALNESS.3=a
+option.SPEC_CHANNEL_EMISSIVE=Канал емісивності текстури спекулярного
+option.SPEC_CHANNEL_EMISSIVE.comment=Який канал (червоний, зелений, синій або альфа) читати з текстури спекулярного для визначення емісивності. SEUS за замовчуванням використовує червоний канал
+value.SPEC_CHANNEL_EMISSIVE.0=r
+value.SPEC_CHANNEL_EMISSIVE.1=g
+value.SPEC_CHANNEL_EMISSIVE.2=b
+value.SPEC_CHANNEL_EMISSIVE.3=a
+
+# RayTracing
+option.GI_RAY_COUNT=Кількість зразків трасування променів
+option.GI_RAY_COUNT.comment=Кількість зразків для трасування променів. Більші значення можуть значно знизити шум, але сильно впливають на продуктивність!
+option.GI_SECONDARY_SAMPLES=Другорядні зразки GI
+option.GI_SECONDARY_SAMPLES.comment=Кількість зразків для трасування вторинного GI. Більше зразків зменшує артефакт "диско підлоги", який зазвичай видно в відображеннях, за рахунок зниження продуктивності
+option.DIFFUSE_TRACE_LENGTH=Довжина трасування дифузного GI
+option.DIFFUSE_TRACE_LENGTH.comment=Максимальна довжина променя для трасування дифузного GI. Більші значення дають більш точне освітлення, враховуючи віддалені поверхні, але за вищу вартість. Нижчі значення можуть призвести до витоків освітлення в великих внутрішніх приміщеннях!
+option.RAYTRACE_GEOMETRY_QUALITY=Якість геометрії трасування
+option.RAYTRACE_GEOMETRY_QUALITY.comment=Низька - жодні блоки не трасуються з їх спеціальними формами (плити, сходи тощо). Середня - деякі блоки трасуються з спеціальними формами (сходи, плити, двері, паркани). Висока - всі блоки (які вже були кодовані) трасуються з їх спеціальними формами. Нижчі налаштування викликають артефакти, але є швидшими. Вищі налаштування значно збільшують час завантаження.
+value.RAYTRACE_GEOMETRY_QUALITY.0=Низька
+value.RAYTRACE_GEOMETRY_QUALITY.1=Середня
+value.RAYTRACE_GEOMETRY_QUALITY.2=Висока
+option.MAX_BLEND_WEIGHT=Максимальна вага змішування
+option.MAX_BLEND_WEIGHT.comment=Максимальна вага при змішуванні кадрів для денойзингу. Нижчі значення викликають зміни GI з часом. Вищі значення викликають тягучі зображення
+option.GI_SCREEN_SPACE_TRACING=Трасування GI в екранному просторі
+option.GI_SCREEN_SPACE_TRACING.comment=Дозволяє поверхням в екранному просторі кидати непрямі тіні та освітлення, які зазвичай не з'являються (моби, трава тощо)
+option.SUNLIGHT_LEAK_FIX=Виправлення витоку сонячного світла
+option.SUNLIGHT_LEAK_FIX.comment=Виправляє витоки сонячного світла в печерах. Може викликати проблеми з великими зовнішніми конструкціями з виступами!
+option.MOD_BLOCK_SUPPORT=Підтримка модульних блоків
+option.MOD_BLOCK_SUPPORT.comment=Розглядає модульні блоки в вокселізації. Можуть виникати проблеми з Optifine CTM на деяких ресурс-паках. Якщо вимкнено, модульні блоки вважатимуться повітрям при трасуванні шляхів
+option.CAVE_GI_LEAK_FIX=Повне виправлення витоків GI в печерах
+option.CAVE_GI_LEAK_FIX.comment=Спроба виправити витоки непрямого освітлення з неба та сонця в печерах, не дозволяючи прямий GI від неба або сонця на поверхнях, де рівень світла з неба нульовий, і не дозволяючи непрямий GI від неба та сонця, поки гравець не буде стояти в рівні нульового освітлення з неба тривалий час. Великі конструкції з виступами можуть спричинити хибні спрацьовування та видалити деякий GI, який мав би бути присутнім
+option.SHAPE_CALC_FUNC=Функція розрахунку геометрії
+option.SHAPE_CALC_FUNC.comment=Функція, що використовується для рендерингу геометрії в трасуванні шляхів. Може бути вибрана для скорочення часу компіляції або кращої продуктивності
+value.SHAPE_CALC_FUNC.0=Час компіляції
+value.SHAPE_CALC_FUNC.1=Продуктивність
+
+# Reflection
+option.REFLECTION_TRACE_LENGTH=Довжина трасування відображень
+option.REFLECTION_TRACE_LENGTH.comment=Максимальна довжина променя для трасування відображень. Вищі значення дозволяють відображенням проникати далі у світ, але з більшою вартістю. Нижчі значення можуть спричинити витікання в великих закритих приміщеннях!
+option.SCREEN_SPACE_CONNECTION_REFLECTION=Відображення контактів у просторі екрану
+option.SCREEN_SPACE_CONNECTION_REFLECTION.comment=Відображення у просторі екрану, яке використовує дані екрану для позиції вокселя, трасованої шляхом. Деякі не кубічні блоки можуть бути відображені неправильно
+option.REFLECTION_SCREEN_SPACE_TRACING=Трасування відображень у просторі екрану
+option.REFLECTION_SCREEN_SPACE_TRACING.comment=Дозволяє поверхням у просторі екрану з'являтися у відображеннях, які б вони інакше не з'являлись (мобів, трава тощо)
+
+# Water
+option.WATER_PARALLAX=Паралакс води
+option.WATER_PARALLAX.comment=Рендеринг хвиль води за допомогою згенерованих даних паралакса
+option.WATER_WAVE_HEIGHT=Висота хвиль води
+option.WATER_WAVE_HEIGHT.comment=Висота хвиль води
+option.WATER_FOG_DENSITY=Щільність водяного туману
+option.WATER_FOG_DENSITY.comment=Визначає, наскільки туманною або мутною буде вода. Зменште це значення для більш прозорих вод
+option.UNDERWATER_REFLECTION_STRENGTH=Гладкість відображення під водою
+option.UNDERWATER_REFLECTION_STRENGTH.comment=Зв'язок між відображенням та заломленням під водою
+
+# Post Processing
+option.TONEMAP_CURVE=Крива тонемапінгу
+option.TONEMAP_CURVE.comment=Контролює інтенсивність світлих ділянок. Нижчі значення дають більш кінематографічний вигляд, вищі значення дають більш яскравий/натуральний вигляд. За замовчуванням: 5.5
+option.TONEMAP_OPERATOR=Оператор тонемапінгу
+option.TONEMAP_OPERATOR.comment=Кожен оператор тонемапінгу визначає різний спосіб подання сирої внутрішньої HDR інформації про колір у діапазон кольорів, який гарно виглядає на обмеженому діапазоні моніторів/дисплеїв. Кожен оператор надає різний вигляд кінцевому зображенню
+option.EXPOSURE=Експозиція
+option.EXPOSURE.comment=Контролює загальну яскравість/експозицію зображення. Вищі значення дають яскравіше зображення. За замовчуванням: 1.0
+option.SATURATION=Насиченість
+option.SATURATION.comment=Регулювання насиченості. Вищі значення дають більш кольорове зображення. За замовчуванням: 1.0
+option.GAMMA=Гамма
+option.GAMMA.comment=Регулювання гамми. Нижчі значення роблять тіні темнішими. Вищі значення роблять тіні яскравішими. За замовчуванням: 1.0
+option.BLOOM_AMOUNT=Сила блума
+option.BLOOM_AMOUNT.comment=Кількість блума, яку застосовувати до зображення
+value.BLOOM_AMOUNT.0.0=ВИКЛ.
+option.BLACK_DEPTH=Глибина чорного
+option.BLACK_DEPTH.comment=Регулює інтенсивність чорних/низького світла на зображенні. Вищі значення переводять темніше світло в чорний колір. 0 вимикає ефект
+value.BLACK_DEPTH.0.0=ВИКЛ.
+option.WHITE_CLIP=Кліп білих
+option.WHITE_CLIP.comment=Обрізає яскраві кольори до білого
+value.WHITE_CLIP.0.0=ВИКЛ.
+option.MOTION_BLUR=Розмиття руху
+option.MOTION_BLUR.comment=Розмиття руху. Зробить рух розмитим
+option.MOTION_BLUR_INTENSITY=Інтенсивність розмиття руху
+option.MOTION_BLUR_INTENSITY.comment=Інтенсивність розмиття руху. Вищі значення призведуть до сильнішого розмиття при русі
+option.POST_SHARPENING=Після різкості
+option.POST_SHARPENING.comment=Кількість різкості, яку застосовувати до зображення перед фінальним відображенням
+option.DEPTH_OF_FIELD=Глибина різкості
+option.DEPTH_OF_FIELD.comment=Глибина різкості (DoF)
+option.DOF_STRENGTH=Сила глибини різкості
+option.DOF_STRENGTH.comment=Сила ефекту глибини різкості
+
+# Anti-Aliasing
+option.FINAL_FXAA=Проходи FXAA
+option.FINAL_FXAA.comment=Кількість проходів FXAA, які застосовуються після тимчасового антиаліасінгу
+option.PIXEL_LOOK=Вигляд пікселів
+option.PIXEL_LOOK.comment=Контролює дрібний вигляд фінального зображення. Sharp: Якщо вам подобається різке зображення
+value.PIXEL_LOOK.0=Різке
+value.PIXEL_LOOK.1=Кінематографічне
+option.SKIP_AA=Пропустити весь антиаліасінг
+option.SKIP_AA.comment=Тільки для демонстраційних цілей! Вимикає весь антиаліасінг/тимчасову реконструкцію!
+option.AA_STYLE=Стиль AA
+option.AA_STYLE.comment=Stable: AA віддає перевагу змішуванню історії для більш стабільного зображення. Responsive: AA намагається швидше оновлювати зображення, коли відбуваються зміни
+value.AA_STYLE.0=Стабільний
+value.AA_STYLE.1=Чутливий
+
+# Others
+option.VISUALIZE_DANGEROUS_LIGHT_LEVEL=Візуалізація небезпечного рівня світла
+option.VISUALIZE_DANGEROUS_LIGHT_LEVEL.comment=Коли увімкнено, області з рівнем світла блоку 7 або нижче (де можуть з'являтися моби) підсвічуються червоним. Корисно для визначення безпечності території в режимі виживання. Не враховує рівень світла з неба
+option.SKYLIGHT_FIX=Експериментальне: виправлення рівня світла неба
+option.SKYLIGHT_FIX.comment=Експериментальна опція, намагається виправити неправильний рівень світла неба навколо непрозорих світловипромінювальних блоків після Minecraft 1.14
+option.WEATHER=Погода
+option.WEATHER.comment=Рендеринг дощу та снігу. Експериментальна і багата опція
