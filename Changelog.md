@@ -4,7 +4,7 @@
 * Added auto shape detection for mods based on Iris tag support;
 * Added contrast slider;
 * Added average exposure switch;
-* ru_ru.lang from @NizeroX;
+* ru_ru.lang from @NizeroXs;
 * uk_ua.lang from @yehor-bachurin;
 * Held light changed from switch to slider;
 * Fixed SUNLIGHT_BRIGHTNESS do not work on leaves
