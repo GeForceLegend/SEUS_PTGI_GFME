@@ -1,3 +1,14 @@
+## HRR 2.1 v1.18
+
+* Added support up to 1.21.5;
+* Added auto shape detection for mods based on Iris tag support;
+* Added contrast slider;
+* Added average exposure switch;
+* ru_ru.lang from @NizeroX;
+* uk_ua.lang from @yehor-bachurin;
+* Held light changed from switch to slider;
+* Fixed SUNLIGHT_BRIGHTNESS do not work on leaves
+
 ## HRR 2.1 v1.17
 
 * Added support up to 1.21.4;
