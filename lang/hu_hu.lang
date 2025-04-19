@@ -1,0 +1,236 @@
+# Modified by GeForceLegend, part of text correction by Yark. No permission for any payment
+option.Version=Verzió
+value.Version.HRR210_GFME=HRR 2.1 GFME
+option.Version.comment=Egy mélyen átírt PTGI HRR Test 2.1 verzió, GeForceLegend által.
+
+screen.Atmosphere=Ég...
+screen.Atmosphere.comment=Napsugarak, felhők és atmoszféra.
+screen.Shadow=Árnyék...
+screen.Shadow.comment=Árnyékfelbontás, -távolság és egyéb.
+screen.Lighting=Megvilágítás...
+screen.Lighting.comment=Világítás színei és -intenzitása.
+screen.Texture=Textúrák...
+screen.Texture.comment=Minden, ami a felületekhez és textúrákhoz kötődik.
+screen.Parallax=Parallaxis...
+screen.Parallax.comment=Parallaxis beállításai.
+screen.Specular=Spekularitás...
+screen.Specular.comment=A tükröződő és világító felületek beállításai.
+screen.RayTracing=Ray tracing...
+screen.RayTracing.comment=Ray tracing!
+screen.Reflection=Tükröződés...
+screen.Reflection.comment=Tükröződési hossz és néhány képtéri-visszaverődés.
+screen.Water=Víz...
+screen.Water.comment=Vízhullámok, -köd,  és egyéb beállítások.
+screen.Postprocessing=Utófeldolgozás...
+screen.Postprocessing.comment=Színhangolás, Mozgási elmosás, és végső simétáshoz kötődő dolgok.
+screen.AntiAliasing=Élsimítás...
+screen.Others=Más...
+screen.Others.comment=Néhány másik beállítás.
+
+# Atmosphere
+option.CLOUDS_IN_GI=Felhők a GI-ban
+option.CLOUDS_IN_GI.comment=Vajon beleszámítsa-e a felhőket a Globális Megvilágításba (GI). Lehetővé teszi a felhők számára a környezeti megvilágításra való kihatást a teljesítmény árán.
+option.CLOUDS_IN_AMBIENT=Felhők a környezetben
+option.CLOUDS_IN_AMBIENT.comment=Vajon beleszámítsa-e a messzi felhőket a környezeti megvilágításba. Jobb kapcsolatot létesít a ray tracing határán a teljesítmény árán.
+option.CIRRUS_CLOUDS=Pehelyfelhő
+option.CIRRUS_CLOUDS.comment=Vajon láthatóak legyenek-e a Pehelyfelhők. Nem annyira teljesítményigényesek, mint a gomolyfelhők, de kihatással lehetnek rá, különösen akkor, ha a "Felhők a GI-ban" és/vagy a "Felhők a tükröződésekben" opciók be vannak kapcsolva.
+option.CUMULUS_CLOUDS=Gomolyfelhők
+option.CUMULUS_CLOUDS.comment=Vajon legyenek e gomolyfelhők. Teljesítményigényes, különösen akkor, ha a "Felhők a GI-ban" és/vagy a "Felhők a tükröződésekben" opciók be vannak kapcsolva.
+option.CLOUDS_BLOCKY=Blokkos felhők
+option.CLOUDS_BLOCKY.comment=Legyenek-e a gomolyfelhők szögletesek, kubikáklisak. Egy kis Minecraftos érzetet kelt.
+option.GODRAYS=Atmoszférikus napsugarak
+option.GODRAYS.comment=Lehetővé teszi a volumetrikus napsugarak megjelenését, amikor nem vagy víz alatt.
+option.GODRAYS_STAINED_GLASS_TINT=Napsugarak szinezett üvegen át festése.
+option.GODRAYS_STAINED_GLASS_TINT.comment=Napsugarak festése Szinezett üvegen keresztül.
+option.VOLUMETRIC_LIGHT_STRENGTH=Napsugarak ereje
+option.VOLUMETRIC_LIGHT_STRENGTH.comment=A napsugarak ereje, a víz alattiakra is hat.
+
+# Shadow
+option.shadowDistance=Árnyéktávolság
+option.shadowDistance.comment=Árnyékok távolsága. Állítsd kisebb a jobb közeli, nagyobbra a jobb távoli árnyékokért.
+option.shadowMapResolution=Árnyékleképezési felbontás
+option.shadowMapResolution.comment=Nagyobb értékek teljesítményigényesebbek, de jobb árnyékokat adnak és növelik a ray tracing távolságát. Érdemes az "Árnyéktávolság"-ot is növelni. A 16k / 18 chunkos beállítás 6GB VRAM-ot igényel. A 32k / 32 chunkos beállítás 20GB VRAM-ot igényel.
+value.shadowMapResolution.4096=4k / 5 chunk
+value.shadowMapResolution.8192=8k / 10 chunk
+value.shadowMapResolution.16384=16k / 18 chunk
+value.shadowMapResolution.32768=32k / 32 chunk
+option.SHADOW_MAP_BIAS=Árnyéktorzítás
+option.SHADOW_MAP_BIAS.comment=Magasabb értékek jobb közeli, de rosszabb távoli árnyékot adnak.
+option.sunPathRotation=Nappálya dőlésszöge
+option.DH_SHADOW_FIX=DH Árnyék javítása
+option.DH_SHADOW_FIX.comment=Részleges megoldás az árnyékok bugos megjelenésére nagy és lapos felületeken a Distant Horizons mod használata során
+option.RAY_TRACE_SHADOW=Ray Tracelt árnyákok
+option.RAY_TRACE_SHADOW.comment=Ray Tracelt árnyék, nagyon pontos, de nem támogat egyes blokkokat.
+option.SCREEN_SPACE_SHADOW=Képtéri árnyékok
+option.SCREEN_SPACE_SHADOW.comment=Alapértelmezett kapcsolati árnyékok, nem olyan precíz, mint a Ray Tracelt árnyékok, de minden blokkot és entitást támogat.
+option.CLOUD_SHADOW=Felhőárnyék
+option.CLOUD_SHADOW.comment=Felhők árnyékai. A napsugarakra is hatással van.
+
+# Lighting
+option.SUNLIGHT_BRIGHTNESS=Napfény-erősség
+option.SUNLIGHT_BRIGHTNESS.comment=Állítja a napfény relatív fényerejét az ég/környezet fényéhez viszonyítva.
+option.TORCHLIGHT_COLOR_TEMPERATURE=Fáklya színhőmérséklete
+option.TORCHLIGHT_COLOR_TEMPERATURE.comment=A fáklya színhőmérséklete Kelvinben.
+option.GI_LIGHT_BLOCK_INTENSITY=Blokkfény-erősség
+option.GI_LIGHT_BLOCK_INTENSITY.comment=Mennyire erősek legyenek a blokkok fényei.
+option.GI_LIGHT_TORCH_INTENSITY=Fáklyafény-erősség
+option.GI_LIGHT_TORCH_INTENSITY.comment=Mennyire erősek legyenek a fáklyák fényei.
+option.HELD_LIGHT=Dinamikus kézi világítás
+option.HELD_LIGHT.comment=Lehetővé teszi a kézben tartott tárgyaknak a fény kibocsátását. A szín fáklya színű lesz jelenleg!
+option.GI_SUNLIGHT_STAINED_GLASS_TINT=Színezett Ray Tracelt Napfény
+option.GI_SUNLIGHT_STAINED_GLASS_TINT.comment=A Ray Tracelt Napfény szinezését teszi lehetővé.
+option.GLOWING_LAPIS_LAZULI_BLOCK=Fénylő Lazuritblokk
+option.GLOWING_REDSTONE_BLOCK=Fénylő Redstone-blokk
+option.GLOWING_EMERALD_BLOCK=Fénylő Smaragdblokk
+
+# Textures
+option.TEXTURE_RESOLUTION=Textúrafelbontás
+option.TEXTURE_RESOLUTION.comment=A forráscsomag felbontása. Ezt megfelelően kell beállítani a tükröződésekhez! Győződj meg róla, hogy a forráscsomág állandó felbontást használ-e!
+value.TEXTURE_RESOLUTION.0=Automatikus
+option.NORMAL_MAP_STRENGTH=Normálleképezés felbontása
+option.NORMAL_MAP_STRENGTH.comment=A Normálleképezés erőssége.
+option.ANISOTROPIC_LOD_BIAS=Anizosztróp LOD torzítás
+option.ANISOTROPIC_LOD_BIAS.comment=Ha be van kapcsolva, megtartja a nagyobb beesési szögű felületek részleteit. Hasonló hatások, mint a "Textúra LOD torzítás" esetén.
+option.TEXTURE_LOD_BIAS=Textúra LOD torzítás
+option.TEXTURE_LOD_BIAS.comment=Nagyobb értékek megtartják a textúrák részletességét, de instabilitást, eltűnéseket és nagyobb teljesítményigényt okozhat. Az alacsonyabb értékek stabilitást és jobb teljesítményt adhat, de rosszabb minőségű textúrákhoz vezethet messzi vagy nagyobb beesésí szögű textúrák esetén. 
+option.FORCE_WET_EFFECT=Nedvesség
+option.FORCE_WET_EFFECT.comment=Eső esetén minden felület nedves lesz, így tükröződővé válik.
+option.WET_CAVE_EFFECT=Nedves Barlangok
+option.WET_CAVE_EFFECT.comment=Kisérleti! Minden felület, ami nincs megvilágítva nedvessé válik, ami nedves barlangokhoz, de nedves nembarlangokhoz is vezet. 
+option.RAIN_SPLASH_EFFECT=Esőspriccelés
+option.RAIN_SPLASH_EFFECT.comment=Esőcsepp spriccelések és csobbanások vizen és nedves felületeken.
+option.RAIN_SPLASH_BILATERAL=Simított Esőspriccelés
+option.RAIN_SPLASH_BILATERAL.comment=Billaterális szűrő esőcsepp-spriccelések és csobbanásokra. Amikor be van kapcsolva, a spricctextúra simítva lesz (Nincsenek éles határok) a teljesítmény árán.
+# Parallax
+option.PARALLAX=Parallaxis
+option.PARALLAX.comment=3D effekt a buckaleképezéssel rendelkező forráscsomagokhoz. Győződj meg róla, hogy a textúrafelbontás helyesen van-e beállítva!
+option.SMOOTH_PARALLAX=Simított Parallaxis
+option.SMOOTH_PARALLAX.comment=Simítja a Parallaxis által generált buckákat, hogy lejtősek legyenek a kiálló kockás helyett.
+option.PARALLAX_DEPTH=Parallaxismélység
+option.PARALLAX_DEPTH.comment=A Parallaxis erőssége.
+option.PARALLAX_DISTANCE=Parallaxistávolság
+option.PARALLAX_DISTANCE.comment=A Parallaxis renderelésének távolsága.
+# PBR
+option.SPEC_EMISSIVE=Spekuláris emisszív textúrák
+option.SPEC_EMISSIVE.comment=Lehetővé teszi a textúrák világítását a spekuláris textúra által.
+option.SPEC_SMOOTHNESS_AS_ROUGHNESS=Simmaság érdességként
+option.SPEC_SMOOTHNESS_AS_ROUGHNESS.comment=Ha be van kapcsolva, a simaságért felelős színcsatorna érdességként lesz értelmezve (0 = Teljesen sima, 255 = Maximálisan érdes). A SEUS simaságot használ (0 = Maximálisan érdes, 255 = Teljesen sima) alapértelmezés szerint.
+option.PHYSICALLY_BASED_MAX_ROUGHNESS=Fizikai maxiális érdesség
+option.PHYSICALLY_BASED_MAX_ROUGHNESS.comment=Ha ki van kapcsolva, a maximálisan érdes felületeken nem lesz semmilyen spekuláris kiemelés. (Eredeti SEUS viselkedés) Ha be van kapcsolva, ezek a felületek is valamennyi spekuláris kiemelést kap. Lassulást okozhat, ha a "Mindig Ray Tracelt tükröződések" opció is be van kapcsolva!
+option.FULL_RT_REFLECTIONS=Mindig Ray Tracelt tükröződések
+option.FULL_RT_REFLECTIONS.comment=KI: Csak a sima felületek tükröződnek. BE: Az érdes felületek is tükröződhetnek (nagyobb teljesítményigény). Lassulást okozhat sok félérdes felület esetén!
+option.SPEC_CHANNEL_SMOOTHNESS=Spekuláris simaság
+option.SPEC_CHANNEL_SMOOTHNESS.comment=Melyik színcsatornát (Piros, Zöld, Kék, Alfa) használja a spekuláris textúráról a simaság megállapításához. A SEUS alapvetően a piros csatornát használja.
+value.SPEC_CHANNEL_SMOOTHNESS.0=Piros
+value.SPEC_CHANNEL_SMOOTHNESS.1=Zöld
+value.SPEC_CHANNEL_SMOOTHNESS.2=Kék
+value.SPEC_CHANNEL_SMOOTHNESS.3=Alfa
+option.SPEC_CHANNEL_METALNESS=Spekuláris fémesség
+option.SPEC_CHANNEL_METALNESS.comment=Melyik színcsatornát (Piros, Zöld, Kék, Alfa) használja a spekuláris textúráról a fémesség megállapításához. A SEUS alapvetően a zöld csatornát használja.
+value.SPEC_CHANNEL_METALNESS.0=Piros
+value.SPEC_CHANNEL_METALNESS.1=Zöld
+value.SPEC_CHANNEL_METALNESS.2=Kék
+value.SPEC_CHANNEL_METALNESS.3=Alfa
+option.SPEC_CHANNEL_EMISSIVE=Spekuláris emisszivitás
+option.SPEC_CHANNEL_METALNESS.comment=Melyik színcsatornát (Piros, Zöld, Kék, Alfa) használja a spekuláris textúráról az emisszivitás megállapításához. A SEUS alapvetően az alfa csatornát használja.
+value.SPEC_CHANNEL_EMISSIVE.0=Piros
+value.SPEC_CHANNEL_EMISSIVE.1=Zöld
+value.SPEC_CHANNEL_EMISSIVE.2=kék
+value.SPEC_CHANNEL_EMISSIVE.3=Alfa
+
+# RayTracing
+option.GI_RAY_COUNT=Ray Tracing Minták
+option.GI_RAY_COUNT.comment=A Ray Tracing mintavételezésének mértéke. Magasabb értékek jelentősen csökkentik a zajt. Extém mértékben befolyásolja a teljesítményt!
+option.GI_SECONDARY_SAMPLES=Másodlagos GI Minták
+option.GI_SECONDARY_SAMPLES.comment=Mennyiszer mintavételezzen a  másodlagos GI lekövetéséhez. Magasabb értékek csökkentik a legtöbbször tükröződésekben előforduló "diszkópadló" effektust a teljesítmény árán.
+option.DIFFUSE_TRACE_LENGTH=Diffúz GI hossza
+option.DIFFUSE_TRACE_LENGTH.comment=A lekövetett diffúz GI maximális hossza. Magasabb értékek pontosabb megvilágítást adnak az által, hogy távolabbi felületeket is beleszámol, a teljesítmény árán. Alacsonyabb értékek szivárgást okozhatnak nagy belterekben!
+option.RAYTRACE_GEOMETRY_QUALITY=Geometrikus követés minősége
+option.RAYTRACE_GEOMETRY_QUALITY.comment=Alacsony - Csak egész blokkok számítanak bele a Ray Tracingbe (nem számolja bele a lépcsőket, lapokat, stb.). Közepes - Néhány másik, különleges formájú blokkot is beleszámít a Ray Tracingbe (lépcsők, lapok, ajtók, kerítések). Magas - Minden (Eddig leprogramozott blokk) is beleszámít a Ray Tracingbe. Alacsonyabb értékek bugokat okozhatnak, de gyorsabbak mint a magasabb értékek.
+value.RAYTRACE_GEOMETRY_QUALITY.0=Alacsony
+value.RAYTRACE_GEOMETRY_QUALITY.1=Közepes
+value.RAYTRACE_GEOMETRY_QUALITY.2=Magas
+option.MAX_BLEND_WEIGHT=Max. mosási súly
+option.MAX_BLEND_WEIGHT.comment=Maximális terhelés a képkockák összemosásakor a zajmentesítéshez. Az alacsonyabb értékek GI változást okoznak az idő múlásával. A magasabb értékek utólagos elkenődést okoznak.
+option.GI_SCREEN_SPACE_TRACING=Képtéri GI követés
+option.GI_SCREEN_SPACE_TRACING.comment=Lehetővé teszi, hogy a képen lévő felületek közvetett árnyékot vessenek, amit másképp nem tennének. (mobok, fű, stb.)
+option.SUNLIGHT_LEAK_FIX=Napfény szivárgás jav.
+option.SUNLIGHT_LEAK_FIX.comment=Megjavítja a napfény szivárgását a barlangokban. Problémákat okozhat nagy, kilógó struktúrák esetében!
+option.MOD_BLOCK_SUPPORT=Modos blokk támogatás
+option.MOD_BLOCK_SUPPORT.comment=Beleszámítsa e a modolt blokkokat a voxelizációba. Problémákat okozhat az Optifine CTM-je esetében. Ha ki van kapcsolva, a modolt blokkok levegőként lesznek tekintve.
+option.CAVE_GI_LEAK_FIX=Barlangi GI szivárgás jav.
+option.CAVE_GI_LEAK_FIX.comment=Egy javítás az égből és a napfényből kiszivárgó közvetett fényre barlangokban azáltal, hogy nem engedi a közvetlen GI-t az égboltból vagy a napból olyan felületeken, ahol a napfény szintje nulla, és egyáltalán nem engedi meg a közvetett égbolt- és napfényszintet, amíg a játékos egy ideje egy ilyen helyen áll. A nagy, kilógó struktúrák téves eredményeket okozhatnak, és eltávolíthatnak néhány GI-t, aminek jelen kell lennie.
+option.SHAPE_CALC_FUNC=Geometrikus renderelés
+option.SHAPE_CALC_FUNC.comment=A geometria renderelésének módja a Ray Tracingben. Választható, hogy rövidebb összerakási idő, vagy jobb teljesítményt eredményezzen.
+value.SHAPE_CALC_FUNC.0=Összerakási idő
+value.SHAPE_CALC_FUNC.1=Teljesítmény
+
+# Reflection
+option.REFLECTION_TRACE_LENGTH=Tükröződés hossza
+option.REFLECTION_TRACE_LENGTH.comment=A Ray Tracelt tükröződések maximális hossza. A magasabb értékek a tükröződések messzebbi követését teszi lehhetővé, magasabb teljesítményigénnyel. Alacsonyabb értékek nagy beltéri területeken szivárgást okozhatnak!
+option.SCREEN_SPACE_CONNECTION_REFLECTION=Képtéri érintkező tükröződések
+option.SCREEN_SPACE_CONNECTION_REFLECTION.comment=Képtéri-tükröződés, amely a sugár követett voxelpozíciójának képtéri-adatait használja. Néhány nemkocka blokk rossz renderelését eredményezheti.
+option.REFLECTION_SCREEN_SPACE_TRACING=Képtéri tükröződés követése
+option.REFLECTION_SCREEN_SPACE_TRACING.comment=Lehetővé teszi, hogy a képen lévő felületek megjelenjenek a tükröződésekben, amit másképp nem tennének. (mobok, fű, stb.)
+
+# Water
+option.WATER_PARALLAX=Vízhullámok
+option.WATER_PARALLAX.comment=Vízhullámok renderelése a generált parallaxis adatok alapján.
+option.WATER_WAVE_HEIGHT=Vízhullámok magassága
+option.WATER_WAVE_HEIGHT.comment=A vízhullámok maximális magassága.
+option.WATER_FOG_DENSITY=Vízköd mértéke
+option.WATER_FOG_DENSITY.comment=Meghatározza, milyen ködösen jelenik meg a víz. Tiszább vizekhez csökkentsd ezt az értéket.
+option.UNDERWATER_REFLECTION_STRENGTH=Tükröződéshatár simasága
+option.UNDERWATER_REFLECTION_STRENGTH.comment=A tükröződés és a fénytörés határának simasága.
+
+# Post Processing
+option.TONEMAP_CURVE=Tónusleképezés görbéje
+option.TONEMAP_CURVE.comment=A kiemelések intenzitásának szabályozása. Az alacsonyabb értékek filmszerűbb, a magasabb értékek élénkebb/természetesebb megjelenést adnak. Alapértelmezett: 5.5
+option.TONEMAP_OPERATOR=Tónusleképezés módja
+option.TONEMAP_OPERATOR.comment=Minden tónusleképező módszer más-más módot határoz meg a nyers belső HDR-színinformációk megjelenítésére egy monitorok/kijelzők korlátozott választékához jól illeszkedő színtartományba. Minden módszer más-más érzést kölcsönöz a teljes végső képnek.
+option.EXPOSURE=Exponzúra
+option.EXPOSURE.comment=Állítja a végső fényerejét/exponzúráját a képnek. Magasabb értékek világos képet adnak. Alapértelmezett: 1.0
+option.SATURATION=Telítettség
+option.SATURATION.comment=Telítettség állítása. Magasabb értékek élénkebb képet adnak. Alapértélmezett: 1.0
+option.GAMMA=Gamma
+option.GAMMA.comment=Gamma állítása. Alacsonyabb értékek sötétebb, míg magasabb értékek világosabb értéket adnak. Alapértelmezett: 1.0
+option.BLOOM_AMOUNT=Ragyogás erőssége
+option.BLOOM_AMOUNT.comment=A ragyogás mértéke a képen alkalmazva.
+value.BLOOM_AMOUNT.0.0=KI
+option.BLACK_DEPTH=Feketemélység
+option.BLACK_DEPTH.comment=A fekete szín/kevés fény intenzitását állítja be. Magas értékek a sütét színeket teljes fekjeteségbe tolja át. 0 kikapcsolja ezt az effektet.
+value.BLACK_DEPTH.0.0=KI
+option.WHITE_CLIP=Fehérítés
+option.WHITE_CLIP.comment=A világos színeket fehérbe tolja át.
+value.WHITE_CLIP.0.0=KI
+option.MOTION_BLUR=Mozgáselmosódás
+option.MOTION_BLUR.comment=Mozgáselmosódás. Elmossa a mozgást.
+option.MOTION_BLUR_INTENSITY=Mozgáselmosás mértéke
+option.MOTION_BLUR_INTENSITY.comment=A mozgáselmosás mértéke. Magasabb értékek nagyobb elmosást okoznak mozgás esetén.
+option.POST_SHARPENING=Utóélesítés
+option.POST_SHARPENING.comment=A megjelenítés előtti élesítés mértéke.
+option.DEPTH_OF_FIELD=Mélységélessés
+option.DEPTH_OF_FIELD.comment=mélységélesség (DoF)
+option.DOF_STRENGTH=Mélységélesség mértéke
+option.DOF_STRENGTH.comment=A mélységélesség erőssége.
+# Anti-Aliasing
+option.FINAL_FXAA=FXAA ismétlések
+option.FINAL_FXAA.comment=Az FXAA alkalmazott ismétléseinek száma a temporális élsimítás után.
+option.PIXEL_LOOK=Pixel megjelenés
+option.PIXEL_LOOK.comment=A végső kép finom méretarányú megjelenését szabályozza. Éles: Ha élesebb képet szeretne.
+value.PIXEL_LOOK.0=Éles
+value.PIXEL_LOOK.1=Filmes
+option.SKIP_AA=Minden élsimítás kihagyása
+option.SKIP_AA.comment=Csak demonstációhoz! Kihagy minden élsimítást/temporális rekonstrukciót!
+option.AA_STYLE=Élsimítás stílusa
+option.AA_STYLE.comment=Stabil: Az élsimítás stabilabb képet ad. Reszponzív: Az élsimítás mekpróbál gyorsabban frissíteni a képet ha változás történik.
+value.AA_STYLE.0=Stabil
+value.AA_STYLE.1=Reszponzív
+
+# Others
+option.VISUALIZE_DANGEROUS_LIGHT_LEVEL=Veszélyes fényességi szint jelzése
+option.VISUALIZE_DANGEROUS_LIGHT_LEVEL.comment=Ha be van kapcsolva, a 7-es fényességi szint alatti területeket (Ahol mobok spawnolhatnak) vörössel emeli ki. Hasznos a terület biztonságának méréséhez túlélő módban. Nem számolja bele az ég megvilágítását.
+option.SKYLIGHT_FIX=Kisérleti: Égfény javítása
+option.SKYLIGHT_FIX.comment=Kisérleti opció, megpróbálja megjavítani a rossz megvilágítást világító átlátszatlan blokkok körül 1.14-es verzió után.
+option.WEATHER=Időjárás
+option.WEATHER.comment=Rendereli a havat és az esőt. Kisérleti és bugos.
