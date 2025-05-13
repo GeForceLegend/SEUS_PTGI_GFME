@@ -1,0 +1,236 @@
+# Modified by GeForceLegend, part of text correction by Yark. No permission for any payment
+option.Version=バージョン
+value.Version.HRR210_GFME=HRR 2.1 GFME
+option.Version.comment=PTGI HRR Test 2.1 の大幅な修正版。 Modified by GeForceLegend
+
+screen.Atmosphere=大気...
+screen.Atmosphere.comment=ゴッドレイ、雲、その他の大気効果
+screen.Shadow=影...
+screen.Shadow.comment=影の解像度、距離、その他の影に関する設定
+screen.Lighting=ライティング...
+screen.Lighting.comment=ライティングの色と強度
+screen.Texture=テクスチャ...
+screen.Texture.comment=表面とテクスチャのレンダリングに関する設定
+screen.Parallax=視差...
+screen.Parallax.comment=視差オプション
+screen.Specular=スペキュラー
+screen.Specular.comment=スペキュラーテクスチャの設定
+screen.RayTracing=レイトレーシング...
+screen.RayTracing.comment=レイトレーシング!
+screen.Reflection=反射...
+screen.Reflection.comment=反射する最大の長さとスクリーンスペース反射
+screen.Water=水...
+screen.Water.comment=水の波、霧、その他
+screen.Postprocessing=ポストプロセス設定
+screen.Postprocessing.comment=カラーグレーディング、モーションブラー、その他のポストプロセス設定
+screen.AntiAliasing=アンチエイリアス..
+screen.Others=その他
+screen.Others.comment=いくつかの追加設定
+
+# Atmosphere
+option.CLOUDS_IN_GI=GIで雲を考慮する
+option.CLOUDS_IN_GI.comment=GIライトトレーシングで雲を考慮するかどうか。雲が周囲の光の色に影響を与えるようになりますが、パフォーマンスが低下します
+option.CLOUDS_IN_AMBIENT=大気中の雲
+option.CLOUDS_IN_AMBIENT.comment=遠距離での環境光に雲を考慮するかどうか。レイトレースの端でより良い接続が得られますが、パフォーマンスが低下します
+option.CIRRUS_CLOUDS=巻雲
+option.CIRRUS_CLOUDS.comment=巻雲を描画するかどうか。積雲ほどパフォーマンスに影響しません。特にGIでの雲や反射での雲が有効になっている場合、パフォーマンスに影響します
+option.CUMULUS_CLOUDS=積雲
+option.CUMULUS_CLOUDS.comment=積雲を描画するかどうか。特にGIでの雲や反射での雲が有効になっている場合、パフォーマンスに影響します
+option.CLOUDS_BLOCKY=ブロック調の雲
+option.CLOUDS_BLOCKY.comment=積雲をブロック状に描画するかどうか。マインクラフトらしい雰囲気を出せます
+option.GODRAYS=大気中のゴッドレイ
+option.GODRAYS.comment=水中にいない時に太陽光からのボリュメトリックライティング（ゴッドレイ）を有効にします
+option.GODRAYS_STAINED_GLASS_TINT=ゴッドレイのステンドグラス着色
+option.GODRAYS_STAINED_GLASS_TINT.comment=ゴッドレイの色にステンドグラスの着色効果を有効にします
+option.VOLUMETRIC_LIGHT_STRENGTH=ゴッドレイの強さ
+option.VOLUMETRIC_LIGHT_STRENGTH.comment=ゴッドレイの強度、水中でのゴッドレイにも影響します
+
+# Shadow
+option.shadowDistance=影の描画距離
+option.shadowDistance.comment=影の描画距離。近くの影をきれいにしたい場合は低く設定し、遠くの影をきれいにしたい場合は高く設定します。
+option.shadowMapResolution=シャドウマップの解像度
+option.shadowMapResolution.comment=高い値はパフォーマンスコストに影響しますが、より良い影を得ることができ、パストレーシング距離を増加させます。同時にシャドウ距離も増やしてください。16k / 18チャンクには少なくとも6GBのVRAMが必要です。32k / 32チャンクには少なくとも20GBのVRAMが必要です。
+value.shadowMapResolution.4096=4k / 5チャンク
+value.shadowMapResolution.8192=8k / 10チャンク
+value.shadowMapResolution.16384=16k / 18チャンク
+value.shadowMapResolution.32768=32k / 32チャンク
+option.SHADOW_MAP_BIAS=シャドウマップバイアス
+option.SHADOW_MAP_BIAS.comment=高い値で近距離の影が改善されますが、遠距離の影は悪化します
+option.sunPathRotation=太陽軌道角度
+option.DH_SHADOW_FIX=DHシャドウ修正
+option.DH_SHADOW_FIX.comment=Distant Horizonsによって引き起こされる広大な平面上の影の問題を部分的に修正します
+option.RAY_TRACE_SHADOW=レイトレース影
+option.RAY_TRACE_SHADOW.comment=レイトレースされた影。正確な繋がりのある影を得られますが、一部のブロックはサポートしていません
+option.SCREEN_SPACE_SHADOW=スクリーンスペース影
+option.SCREEN_SPACE_SHADOW.comment=PTGIのデフォルトの影。レイトレース影ほど正確ではありませんが、すべてのブロックとエンティティをサポートします
+option.CLOUD_SHADOW=雲の影
+option.CLOUD_SHADOW.comment=雲の影。ゴッドレイにも影響します
+
+# Lighting
+option.SUNLIGHT_BRIGHTNESS=太陽光の強度
+option.SUNLIGHT_BRIGHTNESS.comment=太陽光と空/環境光の相対的な明るさを調整します
+option.TORCHLIGHT_COLOR_TEMPERATURE=松明光の色温度
+option.TORCHLIGHT_COLOR_TEMPERATURE.comment=松明の光の色温度をケルビン単位で設定します
+option.GI_LIGHT_BLOCK_INTENSITY=ブロック光の強度
+option.GI_LIGHT_BLOCK_INTENSITY.comment=固体ブロックからの光の明るさを設定します
+option.GI_LIGHT_TORCH_INTENSITY=松明光の強度
+option.GI_LIGHT_TORCH_INTENSITY.comment=松明からの光の明るさを設定します
+option.HELD_LIGHT=動的な手持ち光源
+option.HELD_LIGHT.comment=手に持ったアイテムがシーンに光を放つようにします。現時点では、放出される光は常に松明の色です！
+option.GI_SUNLIGHT_STAINED_GLASS_TINT=レイトレーシングでのステンドグラス太陽光着色
+option.GI_SUNLIGHT_STAINED_GLASS_TINT.comment=レイトレーシングでの太陽光にステンドグラスの着色効果を有効にします
+option.GLOWING_LAPIS_LAZULI_BLOCK=ラピスラズリブロックの発光
+option.GLOWING_REDSTONE_BLOCK=レッドストーンブロックの発光
+option.GLOWING_EMERALD_BLOCK=エメラルドブロックの発光
+
+# Textures
+option.TEXTURE_RESOLUTION=テクスチャ解像度
+option.TEXTURE_RESOLUTION.comment=現在のリソースパックの解像度。反射のために正しく設定する必要があります！正確な反射を得るために、一貫した解像度のリソースパックを使用してください！
+value.TEXTURE_RESOLUTION.0=自動
+option.NORMAL_MAP_STRENGTH=法線マップの強度
+option.NORMAL_MAP_STRENGTH.comment=法線マップの強度
+option.ANISOTROPIC_LOD_BIAS=異方性LODバイアス
+option.ANISOTROPIC_LOD_BIAS.comment=有効にすると、高い角度でも表面の詳細を保持します。テクスチャLODバイアスと同様のトレードオフがあります。
+option.TEXTURE_LOD_BIAS=テクスチャLODバイアス
+option.TEXTURE_LOD_BIAS.comment=高い値はテクスチャの詳細を保持しますが、不安定さ、ゴースティング、パフォーマンスの低下を招く可能性があります。低い値は画像の安定性とパフォーマンスを向上させますが、遠距離や斜め角度でのテクスチャが低解像度に見える可能性があります。
+option.FORCE_WET_EFFECT=強制的に濡れた効果
+option.FORCE_WET_EFFECT.comment=雨が降ると、すべての表面が濡れて反射するようになります
+option.WET_CAVE_EFFECT=濡れた洞窟の効果
+option.WET_CAVE_EFFECT.comment=実験的！空やブロックライトが当たらない表面が濡れます。洞窟が濡れた状態になりますが、洞窟以外の場所も濡れます。
+option.RAIN_SPLASH_EFFECT=雨の飛沫
+option.RAIN_SPLASH_EFFECT.comment=水や濡れたブロック上に雨の波紋/飛沫を表示します
+option.RAIN_SPLASH_BILATERAL=滑らかな雨の飛沫
+option.RAIN_SPLASH_BILATERAL.comment=雨の飛沫/波紋のバイラテラルフィルター。有効にすると、波紋のテクスチャがパフォーマンスと引き換えに滑らかになります（ピクセルの硬い縁がなくなります）
+# Parallax
+option.PARALLAX=パララックスオクルージョンマッピング(POM)
+option.PARALLAX.comment=ハイトマップを持つリソースパック用の3D効果。テクスチャ解像度が適切に設定されていることを確認してください!
+option.SMOOTH_PARALLAX=滑らかな視差表面
+option.SMOOTH_PARALLAX.comment=POMの結果を滑らかにし、硬いエッジのピクセルの代わりに滑らかな傾斜を持つ表面にします
+option.PARALLAX_DEPTH=POMの深さ
+option.PARALLAX_DEPTH.comment=POMの深さ
+option.PARALLAX_DISTANCE=POMの距離
+option.PARALLAX_DISTANCE.comment=POMレンダリングの距離
+# PBR
+option.SPEC_EMISSIVE=PBRテクスチャの発光
+option.SPEC_EMISSIVE.comment=PBRテクスチャからの発光データを有効にします
+option.SPEC_SMOOTHNESS_AS_ROUGHNESS=滑らかさを粗さとして扱う
+option.SPEC_SMOOTHNESS_AS_ROUGHNESS.comment=有効にすると、滑らかさを決定するPBRテクスチャチャンネルは粗さとして解釈されます（0 = 完全に滑らか、255 = 最大に粗い）。SEUSはデフォルトで滑らかさ（0 = 最大に粗い、255 = 完全に滑らか）を使用します
+option.PHYSICALLY_BASED_MAX_ROUGHNESS=物理ベースの最大粗さ
+option.PHYSICALLY_BASED_MAX_ROUGHNESS.comment=無効にすると、100%粗い材質はスペキュラーハイライトを持ちません（従来のSEUSの動作）。有効にすると、100％粗い材質でも微妙なスペキュラーハイライトが表示されます。「完全レイトレース反射」がオンの場合、速度低下を引き起こす可能性があります!
+option.FULL_RT_REFLECTIONS=完全レイトレース反射
+option.FULL_RT_REFLECTIONS.comment=オフ：高い滑らかさ値を持つ表面のみが反射をレンダリングします。オン：より粗い表面にも反射をレンダリングします（計算コストが高い）。半粗い表面が多い場合、大きな速度低下を引き起こす可能性があります！
+option.SPEC_CHANNEL_SMOOTHNESS=PBRテクスチャの滑らかさチャンネル
+option.SPEC_CHANNEL_SMOOTHNESS.comment=滑らかさを決定するためにPBRテクスチャから読み取るチャンネル（赤、緑、青、またはアルファ）。SEUSはデフォルトで赤チャンネルを使用します
+value.SPEC_CHANNEL_SMOOTHNESS.0=赤
+value.SPEC_CHANNEL_SMOOTHNESS.1=緑
+value.SPEC_CHANNEL_SMOOTHNESS.2=青
+value.SPEC_CHANNEL_SMOOTHNESS.3=アルファ
+option.SPEC_CHANNEL_METALNESS=PBRテクスチャの金属度チャンネル
+option.SPEC_CHANNEL_METALNESS.comment=金属度を決定するためにPBRテクスチャから読み取るチャンネル（赤、緑、青、またはアルファ）。SEUSはデフォルトで赤チャンネルを使用します
+value.SPEC_CHANNEL_METALNESS.0=赤
+value.SPEC_CHANNEL_METALNESS.1=緑
+value.SPEC_CHANNEL_METALNESS.2=青
+value.SPEC_CHANNEL_METALNESS.3=アルファ
+option.SPEC_CHANNEL_EMISSIVE=PBRテクスチャの発光チャンネル
+option.SPEC_CHANNEL_EMISSIVE.comment=発光を決定するためにPBRテクスチャから読み取るチャンネル（赤、緑、青、またはアルファ）。SEUSはデフォルトで赤チャンネルを使用します
+value.SPEC_CHANNEL_EMISSIVE.0=赤
+value.SPEC_CHANNEL_EMISSIVE.1=緑
+value.SPEC_CHANNEL_EMISSIVE.2=青
+value.SPEC_CHANNEL_EMISSIVE.3=アルファ
+
+# RayTracing
+option.GI_RAY_COUNT=大域照明(GI)レイトレーシングサンプル数
+option.GI_RAY_COUNT.comment=レイトレーシングのサンプル数。高い値はノイズを大幅に減少させることができます。パフォーマンスに非常に影響します！
+option.GI_SECONDARY_SAMPLES=二次GIサンプル
+option.GI_SECONDARY_SAMPLES.comment=二次GIトレーシング用のサンプル数。高いサンプル数は主に反射で見られる「ディスコフロア」アーティファクトを減少させますが、パフォーマンスが低下します
+option.DIFFUSE_TRACE_LENGTH=拡散GIトレース長
+option.DIFFUSE_TRACE_LENGTH.comment=パストレーシングされた拡散GIの最大レイ長。高い値は遠くの表面も考慮するため、より正確な照明結果になりますが、コストが高くなります。低い値は大きな屋内エリアで漏れを引き起こす可能性があります!
+option.RAYTRACE_GEOMETRY_QUALITY=ジオメトリトレース品質
+option.RAYTRACE_GEOMETRY_QUALITY.comment=低：ブロックは特殊な形状（ハーフブロック、階段など）でレイトレースされません。中：一部のブロック（階段、ハーフブロック、ドア、フェンス）は特殊な形状でトレースされます。高：（コーディングされたすべてのブロックは）特殊な形状でトレースされます。低い設定はアーティファクトを引き起こしますが、速度が速くなります。高い設定は読み込み時間を大幅に増加させます
+value.RAYTRACE_GEOMETRY_QUALITY.0=低
+value.RAYTRACE_GEOMETRY_QUALITY.1=中
+value.RAYTRACE_GEOMETRY_QUALITY.2=高
+option.MAX_BLEND_WEIGHT=最大ブレンドウェイト
+option.MAX_BLEND_WEIGHT.comment=ノイズ除去のためのフレームブレンド時の最大ウェイト。低い値はGIが時間とともに変化します。高い値は残像を引き起こします
+option.GI_SCREEN_SPACE_TRACING=スクリーンスペースGIトレーシング
+option.GI_SCREEN_SPACE_TRACING.comment=スクリーンスペース内の表面（モブ、草など）が間接的な影や光を投げかけることを可能にします
+option.SUNLIGHT_LEAK_FIX=太陽光漏れの修正
+option.SUNLIGHT_LEAK_FIX.comment=洞窟内に太陽光が漏れる問題を修正します。大きな屋外の張り出し構造物で問題が発生する可能性があります！
+option.MOD_BLOCK_SUPPORT=MODブロックサポート
+option.MOD_BLOCK_SUPPORT.comment=ボクセル化でMODブロックを考慮します。一部のリソースパックではOptifine CTMで問題が発生する可能性があります。無効にすると、MODブロックはパストレーシングで空気として扱われます
+option.CAVE_GI_LEAK_FIX=完全な洞窟でのGI漏れ修正
+option.CAVE_GI_LEAK_FIX.comment=スカイライトレベルがゼロの表面に空や太陽からの直接GIを許可せず、プレイヤーがしばらくスカイライトレベルゼロで立っている間は間接的な空と太陽のGIを全く許可しないことにより、洞窟内での間接光の漏れを修正しようとします。大きな張り出し構造物が誤検出を引き起こし、存在すべきGIの一部が削除される可能性があります
+option.SHAPE_CALC_FUNC=ジオメトリレンダリング関数
+option.SHAPE_CALC_FUNC.comment=パストレーシングでのジオメトリレンダリングに使用される関数。コンパイル時間短縮または性能向上のために選択できます
+value.SHAPE_CALC_FUNC.0=コンパイル時間優先
+value.SHAPE_CALC_FUNC.1=パフォーマンス優先
+
+# Reflection
+option.REFLECTION_TRACE_LENGTH=反射トレース長
+option.REFLECTION_TRACE_LENGTH.comment=レイトレースされた反射の最大レイ長。高い値は反射がより遠くまでトレースされますが、コストが高くなります。低い値は大きな屋内エリアで漏れを引き起こす可能性があります！
+option.SCREEN_SPACE_CONNECTION_REFLECTION=スクリーンスペース接触反射
+option.SCREEN_SPACE_CONNECTION_REFLECTION.comment=パストレースされたボクセル位置のスクリーンスペースデータを使用するスクリーンスペース反射。一部の立方体でないブロックは正しくレンダリングされません
+option.REFLECTION_SCREEN_SPACE_TRACING=スクリーンスペース反射トレーシング
+option.REFLECTION_SCREEN_SPACE_TRACING.comment=スクリーンスペース内の表面（Mob、草など）が反射に表示されることを可能にします
+
+# Water
+option.WATER_PARALLAX=水の視差
+option.WATER_PARALLAX.comment=生成された視差データで水の波をレンダリングします
+option.WATER_WAVE_HEIGHT=水の波の高さ
+option.WATER_WAVE_HEIGHT.comment=水の波の高さ
+option.WATER_FOG_DENSITY=水中霧の濃度
+option.WATER_FOG_DENSITY.comment=水がどれだけ霧がかかって濁って見えるかを決定します。より透明な水にするには値を下げてください
+option.UNDERWATER_REFLECTION_STRENGTH=反射エッジの滑らかさ
+option.UNDERWATER_REFLECTION_STRENGTH.comment=水中での反射と屈折の接続
+
+# Post Processing
+option.TONEMAP_CURVE=トーンマッピングカーブ
+option.TONEMAP_CURVE.comment=ハイライトの強度を制御します。低い値はより映画的な外観を与え、高い値はより鮮やかで自然な外観を与えます。デフォルト：5.5
+option.TONEMAP_OPERATOR=トーンマップオペレーター
+option.TONEMAP_OPERATOR.comment=各トーンマップオペレーターは、内部のHDRカラー情報をモニター/ディスプレイの限られた範囲(LDR)に適するように表示する異なる方法を定義します。各オペレーターは最終的な画像全体に異なる雰囲気を与えます
+option.EXPOSURE=露出
+option.EXPOSURE.comment=画像全体の明るさ/露出を制御します。高い値はより明るい画像になります。デフォルト：1.0
+option.SATURATION=彩度
+option.SATURATION.comment=彩度の調整。高い値はより色鮮やかな画像になります。デフォルト：1.0
+option.GAMMA=ガンマ
+option.GAMMA.comment=ガンマの調整。低い値は影をより暗くします。高い値は影をより明るくします。デフォルト：1.0
+option.BLOOM_AMOUNT=ブルームの強度
+option.BLOOM_AMOUNT.comment=画像に適用するブルームの量
+value.BLOOM_AMOUNT.0.0=オフ
+option.BLACK_DEPTH=ブラックデプス
+option.BLACK_DEPTH.comment=画像内の黒/低光量の強度を調整します。高い値は暗い光をより黒くします。0は効果を無効にします
+value.BLACK_DEPTH.0.0=オフ
+option.WHITE_CLIP=ホワイトクリップ
+option.WHITE_CLIP.comment=明るい色を白にクリップします
+value.WHITE_CLIP.0.0=オフ
+option.MOTION_BLUR=モーションブラー
+option.MOTION_BLUR.comment=モーションブラー。動きをぼやけて見せます
+option.MOTION_BLUR_INTENSITY=モーションブラーの強度
+option.MOTION_BLUR_INTENSITY.comment=モーションブラーの強度。高い値は動きによるぼかしが増加します
+option.POST_SHARPENING=ポストシャープニング
+option.POST_SHARPENING.comment=最終表示前に画像に適用するシャープニングの量
+option.DEPTH_OF_FIELD=被写界深度
+option.DEPTH_OF_FIELD.comment=被写界深度（DoF）
+option.DOF_STRENGTH=被写界深度の強度
+option.DOF_STRENGTH.comment=被写界深度の強度
+# Anti-Aliasing
+option.FINAL_FXAA=FXAAパス
+option.FINAL_FXAA.comment=時間的アンチエイリアシング後に適用するFXAAパスの数
+option.PIXEL_LOOK=ピクセルルック
+option.PIXEL_LOOK.comment=最終画像の細かなルックを制御します。シャープ：よりシャープな画像を好む場合
+value.PIXEL_LOOK.0=シャープ
+value.PIXEL_LOOK.1=フィルミック
+option.SKIP_AA=すべてのアンチエイリアシングをスキップ
+option.SKIP_AA.comment=実演目的のみ！すべてのアンチエイリアシング/時間的再構築を無効にします！
+option.AA_STYLE=AAスタイル
+option.AA_STYLE.comment=安定：AAはより安定した画像のために履歴のブレンドを優先します。応答性：AAは変更が発生したときに画像をより速く更新しようとします
+value.AA_STYLE.0=安定
+value.AA_STYLE.1=応答性
+
+# Others
+option.VISUALIZE_DANGEROUS_LIGHT_LEVEL=危険な光レベルの可視化
+option.VISUALIZE_DANGEROUS_LIGHT_LEVEL.comment=有効にすると、ブロックライトレベルが7以下の領域（モブがスポーンする可能性がある場所）が赤で強調表示されます。サバイバルゲームプレイでエリアの安全性を判断するのに役立ちます。スカイライトレベルは考慮されません
+option.SKYLIGHT_FIX=実験的：スカイライト修正
+option.SKYLIGHT_FIX.comment=実験的オプション、Minecraft 1.14以降の不透明な発光ブロック周辺での誤ったスカイライトレベルを修正します
+option.WEATHER=天候
+option.WEATHER.comment=雨や雪のレンダリング。実験的でバグが多いです
