@@ -1,3 +1,18 @@
+## HRR 2.1 v1.19
+### Added
+- Added support up to 1.21.9;
+- Added `ja_jp.lang` from @src3453
+- Added `hu_hu.lang` from @Karpatok9089
+### Updated
+- Updated `ru_ru.lang` from @NizeroXs;
+- Updated the look of glowing berries and glowing lichen to match HRR3;
+### Fixed
+- Fixed overexposure caused by contrast code (#70);
+- Fixed compiling error when trying to enable WET_CAVE_EFFECT with Distant Horizons (#76);
+- Fixed cloud shadow changes position with camera Y coordinate;
+- Fixed parallax with different texture resolution and atlas size;
+- Fixed rain ripple not visible under water (#92)
+
 ## HRR 2.1 v1.18
 
 * Added support up to 1.21.5;
