@@ -1,0 +1,236 @@
+# Modified by GeForceLegend, part of text correction by Yark. No permission for any payment
+option.Version=Version
+value.Version.HRR210_GFME=HRR 2.1 GFME
+option.Version.comment=Une version profondément modifiée de PTGI HRR Test 2.1 par GeForceLegend.
+
+screen.Atmosphere=Atmosphère...
+screen.Atmosphere.comment=Rayons crépusculaires, nuages et atmosphère
+screen.Shadow=Ombres...
+screen.Shadow.comment=Résolution des ombres, distance et autres
+screen.Lighting=Lumière...
+screen.Lighting.comment=Couleurs de lumières et intensités
+screen.Texture=Textures...
+screen.Texture.comment=Toutes les options des surfaces et textures
+screen.Parallax=Parallaxe...
+screen.Parallax.comment=Options de parallaxe
+screen.Specular=Spécularité
+screen.Specular.comment=Paramètres des textures spéculaires
+screen.RayTracing=Raytracing...
+screen.RayTracing.comment=Raytracing!
+screen.Reflection=Réflections...
+screen.Reflection.comment=Distance de réflection et réflections screen-space
+screen.Water=Eau...
+screen.Water.comment=Vagues, brouillard et autres
+screen.Postprocessing=Paramètres de post-traitement
+screen.Postprocessing.comment=Étalonnage des couleurs, flou de mouvement, rendu final de l'image.
+screen.AntiAliasing=Anti-Aliasing...
+screen.Others=Autres
+screen.Others.comment=Autres paramètres
+
+# Atmosphere
+option.CLOUDS_IN_GI=Nuages & GI
+option.CLOUDS_IN_GI.comment=Permet aux nuages d'impacter la couleur ambiente de la scène. Impacte les performances.
+option.CLOUDS_IN_AMBIENT=Nuages & Lumière Ambiente
+option.CLOUDS_IN_AMBIENT=Les nuages impactent le calcul de la lumière ambiente lointaine. Impacte les performances.
+option.CIRRUS_CLOUDS=Nuages Cirrus
+option.CIRRUS_CLOUDS.comment=Rendre des nuages cirrus (nuage haute altitude et très fin). Beaucoup moins intensifs que les nuages cumulus. Impacte les performances si Nuages & GI et/ou Réflection des nuages sont activés.
+option.CUMULUS_CLOUDS=Nuages Cumulus
+option.CUMULUS_CLOUDS.comment=Render les nuages cumulus. Impacte les performances si Nuages & GI et/ou Réflection des nuages sont activés.
+option.CLOUDS_BLOCKY=Nuages Carrés
+option.CLOUDS_BLOCKY.comment=Dessine les nuages comme des carrés pour garder l'esthétique de Minecraft.
+option.GODRAYS=Rayons Crépusculaires
+option.GODRAYS.comment=Rendu de rayons crépusculaires depuis le soleil quand le joueur est hors de l'eau.
+option.GODRAYS_STAINED_GLASS_TINT=Rayons Colorés Teinture Verre
+option.GODRAYS_STAINED_GLASS_TINT.comment=Prend en compte la couleur du verre pour colorer le rayon de lumière.
+option.VOLUMETRIC_LIGHT_STRENGTH=Intensités Rayons
+option.VOLUMETRIC_LIGHT_STRENGTH.comment=Intensité des rayons. Affecte aussi les rayons sous l'eau.
+
+# Shadow
+option.shadowDistance=Distance des ombres
+option.shadowDistance.comment=Distance des ombres. Baisser pour augmenter la qualité des ombres proches. Monter pour augmenter la qualité des ombres distants.
+option.shadowMapResolution=Résolution texture des ombres
+option.shadowMapResolution.comment=Une valeur élevée impacte les performances mais rend des ombres de plus haute qualité et permet de lancer des rayons plus loin. Augmenter la distance des ombres en accord. 16k / 18 chunks nécessite au moins 6GB de VRAM. 32k / 32 chunks nécessite au moins 20 GB de VRAM.
+value.shadowMapResolution.4096=4k / 5 chunks
+value.shadowMapResolution.8192=8k / 10 chunks
+value.shadowMapResolution.16384=16k / 18 chunks
+value.shadowMapResolution.32768=32k / 32 chunks
+option.SHADOW_MAP_BIAS=Biais des ombres
+option.SHADOW_MAP_BIAS.comment=Une valeur élevée augmente la qualité des ombres proches mais baisse la qualité des ombres éloignés.
+option.sunPathRotation=Angle du soleil
+option.DH_SHADOW_FIX=Correction ombres pour Distant Horizons
+option.DH_SHADOW_FIX.comment=Corrige partiellement les ombres incorrectes sur de larges surfaces plates créées par le mod Distant Horizons.
+option.RAY_TRACE_SHADOW=Ombres raytracées
+option.RAY_TRACE_SHADOW.comment=Ombres calculées par lancer de rayons. Permet de gagner en qualité mais ne supporte pas tous les blocs.
+option.SCREEN_SPACE_SHADOW=Ombres Screen-Space
+option.SCREEN_SPACE_SHADOW.comment=Default connection shadow of PTGI, isn't as precise as ray traced shadow, but supports all blocks and entities
+option.CLOUD_SHADOW=Ombre des nuages
+option.CLOUD_SHADOW.comment=Ombre des nuages sur le terrain. Affecte les rayons crépusculaires.
+
+# Lighting
+option.SUNLIGHT_BRIGHTNESS=Intensité du soleil
+option.SUNLIGHT_BRIGHTNESS.comment=Ajuste l'intensité lumineuse relative du soleil vs ciel/lumière ambiente.
+option.TORCHLIGHT_COLOR_TEMPERATURE=Température couleur des torches
+option.TORCHLIGHT_COLOR_TEMPERATURE.comment=Température de la couleur des torches en Kelvin.
+option.GI_LIGHT_BLOCK_INTENSITY=Intensité Bloc de Lumière
+option.GI_LIGHT_BLOCK_INTENSITY.comment=Intensité lumineuse provenenant des blocs qui émettent de la lumière.
+option.GI_LIGHT_TORCH_INTENSITY=Intensité Torche
+option.GI_LIGHT_TORCH_INTENSITY.comment=Intensité lumineuse provenenant des torches.
+option.HELD_LIGHT=Lumière Portée en Main
+option.HELD_LIGHT.comment=Permet à l'objet tenu en main par le joueur d'émettre de la lumière dans la scène. La lumière émise est toujouts de couleur torche pour le moment.
+option.GI_SUNLIGHT_STAINED_GLASS_TINT=Rayon de Lumière Couleur Verre en Ray Tracing
+option.GI_SUNLIGHT_STAINED_GLASS_TINT.comment=Permet au ray tracing de prendre en compte la couleur du verre dans les calculs de lumière avec le soleil.
+option.GLOWING_LAPIS_LAZULI_BLOCK=Bloc Lapis Lazuli Émetteur de Lumière
+option.GLOWING_REDSTONE_BLOCK=Bloc Redstone Émetteur de Lumière
+option.GLOWING_EMERALD_BLOCK=Bloc Émeraude Émetteur de Lumière
+
+# Textures
+option.TEXTURE_RESOLUTION=Résolution Texture
+option.TEXTURE_RESOLUTION.comment=Résolution du pack de textures courant. Important pour les réflections ! Choisir un pack avec une résolution cohérente pour des réflections correctes.
+value.TEXTURE_RESOLUTION.0=Auto
+option.NORMAL_MAP_STRENGTH=Magnitude Normal Map
+option.NORMAL_MAP_STRENGTH.comment=Magnitude de la normal map.
+option.ANISOTROPIC_LOD_BIAS=Biais Anisotropic LOD
+option.ANISOTROPIC_LOD_BIAS.comment=Quand actif, préserve les détails sur les surfaces rendues à des angles de caméra faibles par rapport à la texture visée. Même compromis que les biais LOD pour les textures.
+option.TEXTURE_LOD_BIAS=Biais Texture LOD
+option.TEXTURE_LOD_BIAS.comment=Une haute valeur préserve les détails des textures mais peut mener à des instabilités, ghosting et performances réduites. Une petite valeur améliore la statibilité de l'image et les performances mais donne des textures de moins bonne qualité quand la caméra regarde au loin et à des angles de caméra faibles par rapport à la texture visée.
+option.FORCE_WET_EFFECT=Forcer Effet Humidité
+option.FORCE_WET_EFFECT.comment=Force toutes les surfaces à être mouillées en temps de pluie. Elles reflètent la lumière.
+option.WET_CAVE_EFFECT=Effet Grotte Humide
+option.WET_CAVE_EFFECT.comment=Expérimental! Les surfaces mouillées et non-illuminées par le ciel ou lumière de bloc donnent un effet de grotte mouillée.
+option.RAIN_SPLASH_EFFECT=Éclaboussement Pluie
+option.RAIN_SPLASH_EFFECT.comment=Les gouttes de pluie éclaboussent l'eau et les blocs mouillés formant des vaguelettes à la surface.
+option.RAIN_SPLASH_BILATERAL=Éclaboussement Pluie Détaillé
+option.RAIN_SPLASH_BILATERAL.comment=Filtre bilatéral pour les vaguelettes causées par la pluie. Harmonise les vaguelettes avec le terrain. Impacte les performances.
+# Parallax
+option.PARALLAX=Parallaxe
+option.PARALLAX.comment=Effet 3D pour les packs de textures avec heightmaps. S'assurer que la résolution de la texture est correcte!
+option.SMOOTH_PARALLAX=Surface Parallaxe Détaillée
+option.SMOOTH_PARALLAX.comment=Modifie le résultat de POM pour que la surface soit harmonisée et moins variable.
+option.PARALLAX_DEPTH=Profondeur Effet Parallaxe
+option.PARALLAX_DEPTH.comment=Profondeur de l'effet parallaxe.
+option.PARALLAX_DISTANCE=Distance de Parallaxe
+option.PARALLAX_DISTANCE.comment=Distance du rendu parallaxe.
+# PBR
+option.SPEC_EMISSIVE=Émission Spéculaire Texture
+option.SPEC_EMISSIVE.comment=Prend en compte les données d'émission dans les textures spéculaires.
+option.SPEC_SMOOTHNESS_AS_ROUGHNESS=Smoothness pour Roughness
+option.SPEC_SMOOTHNESS_AS_ROUGHNESS.comment=Si activé, le canal de la texture spéculaire correspondant à la smoothness sera interprêté comme étant roughness (0 = très lisse, 255 = très rugueux). SEUS utilises la smoothness (0 = très rugueux, 255 = très lisse) par défaut.
+option.PHYSICALLY_BASED_MAX_ROUGHNESS=Maximum Roughness
+option.PHYSICALLY_BASED_MAX_ROUGHNESS.comment=Si désactivé, les matériaux qui ont 100% de roughness n'auront aucun reflets spéculaires (comportement d'anciennes versions de SEUS). Si activé, même les matériaux 100% rough montreront quelques reflets spéculaires. Cette fonction peut baisser les performances si le "Raytracing Total des Réflections" est activé.
+option.FULL_RT_REFLECTIONS=Raytracing Total Réflections
+option.FULL_RT_REFLECTIONS.comment=OFF: Seules les surfaces avec une smoothness élevée montreront des réflections. ON: Permet aux surfaces moins lisses de montrer des réflections (baisse les performances significativement).
+option.SPEC_CHANNEL_SMOOTHNESS=Canal Smoothness Texture Spéculaire
+option.SPEC_CHANNEL_SMOOTHNESS.comment=De quel canal lire la donnée de smoothness dans la texture spéculaire. SEUS utilise le canal rouge (red) par défaut.
+value.SPEC_CHANNEL_SMOOTHNESS.0=r
+value.SPEC_CHANNEL_SMOOTHNESS.1=g
+value.SPEC_CHANNEL_SMOOTHNESS.2=b
+value.SPEC_CHANNEL_SMOOTHNESS.3=a
+option.SPEC_CHANNEL_METALNESS=Canal Metalness Texture Spéculaire
+option.SPEC_CHANNEL_METALNESS.comment=De quel canal lire la donnée de metalness dans la texture spéculaire. SEUS utilise le canal rouge (red) par défaut.
+value.SPEC_CHANNEL_METALNESS.0=r
+value.SPEC_CHANNEL_METALNESS.1=g
+value.SPEC_CHANNEL_METALNESS.2=b
+value.SPEC_CHANNEL_METALNESS.3=a
+option.SPEC_CHANNEL_EMISSIVE=Canal Emissive Texture Spéculaire
+option.SPEC_CHANNEL_EMISSIVE.comment=comment=De quel canal lire la donnée de emissiveness dans la texture spéculaire. SEUS utilise le canal rouge (red) par défaut.
+value.SPEC_CHANNEL_EMISSIVE.0=r
+value.SPEC_CHANNEL_EMISSIVE.1=g
+value.SPEC_CHANNEL_EMISSIVE.2=b
+value.SPEC_CHANNEL_EMISSIVE.3=a
+
+# RayTracing
+option.GI_RAY_COUNT=Ray Tracing Échantillons
+option.GI_RAY_COUNT.comment=Nombre de rayons lancés pour le ray tracing. Plus la valeur est élevée plus le bruit sera réduit. Cela impacte énormement les performances.
+option.GI_SECONDARY_SAMPLES=Échantillons Secondaires GI
+option.GI_SECONDARY_SAMPLES.comment=Nombre de rayons secondaires à lancer pour le calcul de la Global Illumination (GI). De hautes valeurs réduisent l'artéfact "sol disco" vu dans les réflections. Réduit significativement les performances.
+option.DIFFUSE_TRACE_LENGTH=Longueur Tracer Rayon Diffus GI
+option.DIFFUSE_TRACE_LENGTH.comment=Longueur maximum du lancer de rayon dans la scène. Une haute valeur donne de meilleurs résultats en prenant en compte les surfaces éloignées dans la scène pour le calcul de la lumière au prix de performances. Une petite valeur peut donner des artéfactes visuels dans les espaces clos mais améliore les performances.
+option.RAYTRACE_GEOMETRY_QUALITY=Qualité Tracé Géométrique
+option.RAYTRACE_GEOMETRY_QUALITY.comment=Rapide - Aucun bloc n'est tracé avec sa forme détaillée (dalles, escaliers, etc.). Moyen - quelques blocs sont tracés avec leur forme exacte (escaliers, dalles, portes, barrières). Détaillé - Tous les blocs (ceux pris en compte et codés dans le shader pack) sont tracés avec leur forme exacte. Rapide est la meilleur option pour gagner en performances mais donne des artéfactes visuels. Moyen et Détaillé augmentent significativement le temps de chargement du shader.
+value.RAYTRACE_GEOMETRY_QUALITY.0=Rapide
+value.RAYTRACE_GEOMETRY_QUALITY.1=Moyen
+value.RAYTRACE_GEOMETRY_QUALITY.2=Détaillé
+option.MAX_BLEND_WEIGHT=Poids Max Mélange Frames
+option.MAX_BLEND_WEIGHT.comment=Poids maximum pour mélanger les images rendues entres-elles pour le denoising (retirer le bruit causé par le ray tracing). Une valeur basse donne une lumière qui change avec le temps. Une valeur élevée donne donne un effet de trailing visible.
+option.GI_SCREEN_SPACE_TRACING=Approximation GI via Screen-Space
+option.GI_SCREEN_SPACE_TRACING.comment=Permet à certaines surfaces dans screen-space de projeter des ombres indirectes et lumières qui n'apparaîtraient pas autrement (mobs, herbe, etc.)
+option.SUNLIGHT_LEAK_FIX=Correctif Lumière Soleil
+option.SUNLIGHT_LEAK_FIX.comment=Corrige le problème de la lumière qui fuite et apparaît dans les caves fermées. Peut causer des problèmes avec des structures larges en forme d'arche au dehors.
+option.MOD_BLOCK_SUPPORT=Support pour Blocs de Mods
+option.MOD_BLOCK_SUPPORT.comment=Prend en compte les blocs provenenant de mobs dans la voxelization. Peut causer des problèmes avec Optifine CTM sur certains packs de textures. Si désactivé, les blocs de mods seront considérés comme de l'air et ne seront pas pris en compte dans le calcul de la lumière, ce qui donne des artéfactes visuels très prononcés.
+option.CAVE_GI_LEAK_FIX=Correctif Complet Fuite Illumination en Grotte
+option.CAVE_GI_LEAK_FIX.comment=Tente de résoudre les fuites de lumières indirectes du ciel et du soleil quand le joueur est dans une grotte. Cette fonction empêche la lumière directe du soleil et du ciel d'impacter les surfaces qui ont une niveau de skylight à 0 et refuse la lumière indirecte du ciel et du soleil d'impacter les surfaces alentours quand le joueur reste dans une zone avec niveau de skylight à 0 pendant un temps. Des structures en forme d'arche dans les espaces ouverts peuvent donner des faux-positifs et retirer de la lumière à certains endroits.
+option.SHAPE_CALC_FUNC=Détail Géométrie en Ray Tracing
+option.SHAPE_CALC_FUNC.comment=Fonction utilisée pour le rendu géométrique en ray tracing. Bénéficie soit les performances ou le temps de compilation.
+value.SHAPE_CALC_FUNC.0=Compilation rapide
+value.SHAPE_CALC_FUNC.1=Performances en jeu
+
+# Reflection
+option.REFLECTION_TRACE_LENGTH=Longueur Tracé Réflections
+option.REFLECTION_TRACE_LENGTH.comment=Longueur maximum du lancé de rayon pour calculer les réflections. Une valeur élevée permet de voir des réflections loin dans la scène mais baisse les performances. Une valeur basse donne des fuites dans des espaces clos.
+option.SCREEN_SPACE_CONNECTION_REFLECTION=Réflection au Contact Screen-Space
+option.SCREEN_SPACE_CONNECTION_REFLECTION.comment=Utilise screen-space ray tracing et ray tracing pure pour le calcul de réflections. Certains blocs rendront des artéfactes visuels.
+option.REFLECTION_SCREEN_SPACE_TRACING=Calcul Réflections Screen-Space
+option.REFLECTION_SCREEN_SPACE_TRACING.comment=Permet à certaines surfaces en screen-space d'apparaître dans les réflections qui n'apparaîtraient pas autrement (mobs, herbe, etc.).
+
+# Water
+option.WATER_PARALLAX=Parallaxe Eau
+option.WATER_PARALLAX.comment=Rend des vagues sur l'eau en utilisant les données parallaxe générées procéduralement.
+option.WATER_WAVE_HEIGHT=Hauteur Vagues
+option.WATER_WAVE_HEIGHT.comment=Taille des vagues.
+option.WATER_FOG_DENSITY=Densité Brouillar Sous-Marin
+option.WATER_FOG_DENSITY.comment=Détermine à quel point l'eau est sombre. Une petite valeur rend l'eau plus clair.
+option.UNDERWATER_REFLECTION_STRENGTH=Intensité Transition Réflection & Réfraction
+option.UNDERWATER_REFLECTION_STRENGTH.comment=La connection entre réflection et réfraction sous l'eau.
+
+# Post Processing
+option.TONEMAP_CURVE=Courbe Tonemapping
+option.TONEMAP_CURVE.comment=Contrôle l'intensité des zone spéculaires. Une valeur basse donne un look film, une grande valeur donne un look plus naturel/vibrant. Défaut est 5.5.
+option.TONEMAP_OPERATOR=Opérateur Tonemap
+option.TONEMAP_OPERATOR.comment=Chaque opérateur de tonemapping définie une manière de présenter les données brutes HDR sur un écran avec une quantité limitée de couleurs. Chaque opérateur donne un look différent aux images du jeu.
+option.EXPOSURE=Exposition
+option.EXPOSURE.comment=Contrôle l'exposition générale de l'image. Une valeur élevée donne une image plus claire. Défaut: 1.0.
+option.SATURATION=Saturation
+option.SATURATION.comment=Ajustement de la saturation. Une valeur élevée donne une image plus colorée. Défaut: 1.0.
+option.GAMMA=Gamma
+option.GAMMA.comment=Ajustement gamma. Une valeur faible donne des ombres plus noires. Une valeur élevée donne des ombres plus lumineuses. Défaut: 1.0.
+option.BLOOM_AMOUNT=Intensité Bloom
+option.BLOOM_AMOUNT.comment=Quantité de bloom à appliquer à l'image.
+value.BLOOM_AMOUNT.0.0=OFF
+option.BLACK_DEPTH=Profondeur des Noirs
+option.BLACK_DEPTH.comment=Ajuste l'intensité des noirs/faible lumière dans l'image. Une valeur élevée donne des noirs plus noirs. 0 désactive l'effet.
+value.BLACK_DEPTH.0.0=OFF
+option.WHITE_CLIP=Seuil Blancs
+option.WHITE_CLIP.comment=Coupe la couleur à blanche. Considère la couleur comme blanche.
+value.WHITE_CLIP.0.0=OFF
+option.MOTION_BLUR=Flou de Mouvement
+option.MOTION_BLUR.comment=Flou de mouvement. Applique un effet de flou quand le joueur bouge.
+option.MOTION_BLUR_INTENSITY=Intensité Flou de Mouvement
+option.MOTION_BLUR_INTENSITY.comment=L'intensité du flou de mouvement. Une valeur élevée donne un flou plus prononcé.
+option.POST_SHARPENING=Netteté Image
+option.POST_SHARPENING.comment=La puissance de l'algorithme de post-traitement pour affiner l'image pour la rendre plus net.
+option.DEPTH_OF_FIELD=Profondeur de Champs
+option.DEPTH_OF_FIELD.comment=Profondeur de Champs
+option.DOF_STRENGTH=Intensité Profondeur de Champs
+option.DOF_STRENGTH.comment=Intensité de la Profondeur de Champs
+# Anti-Aliasing
+option.FINAL_FXAA=FXAA
+option.FINAL_FXAA.comment=Nombre de passes FXAA à appliquer après le TAA (temporal anti-aliasing)
+option.PIXEL_LOOK=Look Pixel
+option.PIXEL_LOOK.comment=Contrôle le rendu fin de l'image finale. Net: pour une image plus nette.
+value.PIXEL_LOOK.0=Net
+value.PIXEL_LOOK.1=Filmic
+option.SKIP_AA=Auncun Anti-Aliasing
+option.SKIP_AA.comment=Juste pour la démo! Supprime de la pipeline toutes les passes d'anti-aliasing et reconstruction via les frames précédentes.
+option.AA_STYLE=Style AA
+option.AA_STYLE.comment=Stable: Anti-aliasing avec historique de valeurs pour une image plus stable. Souple: rafraîchissement plus rapide de l'image à un changement.
+value.AA_STYLE.0=Stable
+value.AA_STYLE.1=Souple
+
+# Others
+option.VISUALIZE_DANGEROUS_LIGHT_LEVEL=Montrer les zones dangereuses
+option.VISUALIZE_DANGEROUS_LIGHT_LEVEL.comment=Surligner en rouge les zones du terrain avec un niveau de lumière de 7 ou moins. Cela permet de déterminer si des monstres peuvent apparaître (utile en mode survie). Cette fonction ne prends pas en compte le niveau d'exposition au ciel.
+option.SKYLIGHT_FIX=En développement: Correction lumière du ciel
+option.SKYLIGHT_FIX.comment=Tente de corriger le mauvais niveau de lumière provenant du ciel autour d'objets opaques qui émettent de la lumière après Minecraft 1.14.
+option.WEATHER=Météo
+option.WEATHER.comment=Dessine la pluie et la neige. Encore en développement et buggé.
