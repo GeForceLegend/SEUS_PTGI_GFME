@@ -1,3 +1,20 @@
+## HRR 2.1 v1.20
+### Added
+- Added Voxy support (#102);
+- Added fr_fr.lang from @MahoganyTown;
+- Added initial 26.1 support, still buggy as vanilla and Iris changed very much;
+### Updated
+- Force sample 0 mip for specular texture, to avoid LabPBR emission from higher mips;
+- Set stained glass instead of water as default translucent terrain material;
+- Water in caludron in 26.1 now looks same as real water;
+### Removed
+- Removed shadowmapping for DH terrain as Iris is extremely buggy on it, fixed #78;
+### Fixed
+- Fixed copper bars are considered as full blocks in voxelization;
+- Fixed invisble text in Iris 1.21.9+ (#95);
+- Fixed physics mod ocean compatibility in high Minecraft versions (#101);
+- Fixed enchantment glint of held item in Iris 26.1;
+
 ## HRR 2.1 v1.19
 ### Added
 - Added support up to 1.21.9;
