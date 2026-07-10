@@ -1,3 +1,18 @@
+## HRR 2.1 v1.21
+### Added
+- Added 26.2 blocks;
+- Added physics ocean v2 compat;
+### Changed
+- Disabled shadow mipmap generation for better performance, and better quaility on some effects;
+### Fixed
+- Fixed translucent entities and particles in below case(#114):
+  - Nether and the end on Iris 26.1;
+  - Overworld on Iris 1.21.11 and some lower versions;
+- Fixed wrong specular data on entities/held solid objects if there is lod water behind it (#118);
+- Fixed physics ocean v1 compat on 26.1 and below (if there is any issue);
+- Fixed compile error on physics smoke/liquid shadow (shadow still incorrect because physics mod's patcher cannot handle geometry shader, but at least gbuffer can render);
+- Fixed water fog rendering behind water when camera is also in water;
+
 ## HRR 2.1 v1.20
 ### Added
 - Added Voxy support (#102);
