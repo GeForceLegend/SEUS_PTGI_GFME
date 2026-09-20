@@ -1,3 +1,11 @@
+## HRR 2.1 v1.22
+### Added
+- Added 26.3 blocks;
+### Fixed
+- Fixed black shadow outside far plane on latest Iris versions;
+- Fixed cutout blocks fail to be voxelized on Iris 1.21.11 and above;
+- Fixed block outline rendering, at the cost of leash rendering a bit strange;
+
 ## HRR 2.1 v1.21
 ### Added
 - Added 26.2 blocks;
